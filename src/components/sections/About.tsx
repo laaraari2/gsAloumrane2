@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { Info, Code, BookOpen, Users, Target, Heart, Award, Zap } from 'lucide-react';
 
+import Developer from '../Developer';
+
 const About: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
 
   const features = [
     {
@@ -31,39 +34,61 @@ const About: React.FC = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="max-w-5xl mx-auto"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      className="max-w-6xl mx-auto"
     >
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-6xl font-black mb-4 text-gradient text-shadow-glow">
           {t('about.title')}
         </h2>
-        <p className="text-slate-400">{t('about.subtitle')}</p>
+        <p className="text-slate-400 font-medium uppercase tracking-widest text-sm opacity-80">{t('about.subtitle')}</p>
       </div>
 
-      {/* Introduction */}
-      <div className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-8 backdrop-blur-sm border border-purple-500/20 mb-8">
-        <div className="flex items-start gap-4">
-          <div className="bg-purple-500/20 p-3 rounded-lg">
-            <Info className="w-6 h-6 text-purple-400" />
+      <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        <motion.div 
+          className="glass p-10 rounded-3rem border border-white/10"
+          initial={{ x: -30, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+        >
+          <div className="flex items-start gap-6">
+            <div className="bg-purple-500/20 p-4 rounded-2xl border border-purple-500/20">
+              <Info className="w-8 h-8 text-purple-400 shadow-glow" />
+            </div>
+            <div>
+              <h3 className="text-2xl font-black text-white mb-4 uppercase tracking-tighter">
+                {t('about.intro.title')}
+              </h3>
+              <p className="text-slate-300 leading-relaxed font-medium text-lg opacity-90">{t('about.intro.description')}</p>
+            </div>
           </div>
-          <div>
-            <h3 className="text-xl font-bold font-serif text-purple-300 mb-3">
-              {t('about.intro.title')}
-            </h3>
-            <p className="text-slate-300 leading-relaxed">{t('about.intro.description')}</p>
+        </motion.div>
+
+        <motion.div 
+          className="glass p-10 rounded-3rem border border-white/10"
+          initial={{ x: 30, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+        >
+          <div className="flex items-start gap-6">
+            <div className="bg-yellow-500/20 p-4 rounded-2xl border border-yellow-500/20">
+              <Heart className="w-8 h-8 text-yellow-400 shadow-glow" />
+            </div>
+            <div>
+              <h3 className="text-2xl font-black text-white mb-4 uppercase tracking-tighter">
+                {t('about.purpose.title')}
+              </h3>
+              <p className="text-slate-300 leading-relaxed font-medium text-lg opacity-90">{t('about.purpose.description')}</p>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      {/* Features */}
-      <div className="mb-8">
-        <h3 className="text-2xl font-bold font-serif text-purple-300 mb-6 text-center">
+      <div className="mb-20">
+        <h3 className="text-3xl font-black text-white mb-12 text-center uppercase tracking-widest">
           {t('about.features.title')}
         </h3>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
@@ -72,92 +97,39 @@ const About: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20"
+                className="glass-dark card-hover rounded-2xl p-8 border border-white/5 text-center"
               >
-                <div className="flex items-start gap-4">
-                  <div className="bg-purple-500/20 p-3 rounded-lg">
-                    <Icon className="w-6 h-6 text-purple-400" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-purple-300 mb-2">{feature.title}</h4>
-                    <p className="text-slate-300 text-sm leading-relaxed">{feature.description}</p>
-                  </div>
+                <div className="bg-white/5 p-4 rounded-2xl w-min mx-auto mb-6">
+                  <Icon className="w-8 h-8 text-purple-400" />
                 </div>
+                <h4 className="text-xl font-black text-white mb-3 uppercase tracking-tighter">{feature.title}</h4>
+                <p className="text-slate-400 text-sm font-medium leading-relaxed">{feature.description}</p>
               </motion.div>
             );
           })}
         </div>
       </div>
 
-      {/* Developer Info */}
-      <div className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-8 backdrop-blur-sm border border-purple-500/20 mb-8">
-        <div className="flex items-start gap-4">
-          <div className="bg-pink-500/20 p-3 rounded-lg">
-            <Code className="w-6 h-6 text-pink-400" />
-          </div>
-          <div className="flex-1">
-            <h3 className="text-xl font-bold font-serif text-purple-300 mb-3">
-              {t('about.developer.title')}
-            </h3>
-            <p className="text-slate-300 leading-relaxed mb-4">{t('about.developer.description')}</p>
-            <div className="flex items-center gap-4">
-              <div>
-                <p className="text-sm text-slate-400 mb-1">{t('about.developer.name_label')}</p>
-                <p className="text-lg font-bold text-purple-300">
-                  {t('about.developer.name_ar')} / {t('about.developer.name_fr')}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Developer />
 
-      {/* Purpose */}
-      <div className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-8 backdrop-blur-sm border border-purple-500/20 mb-8">
-        <div className="flex items-start gap-4">
-          <div className="bg-yellow-500/20 p-3 rounded-lg">
-            <Heart className="w-6 h-6 text-yellow-400" />
-          </div>
-          <div>
-            <h3 className="text-xl font-bold font-serif text-purple-300 mb-3">
-              {t('about.purpose.title')}
-            </h3>
-            <p className="text-slate-300 leading-relaxed">{t('about.purpose.description')}</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Stats */}
-      <div className="grid md:grid-cols-3 gap-6">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20 text-center"
-        >
-          <Award className="w-12 h-12 text-yellow-400 mx-auto mb-3" />
-          <h4 className="text-3xl font-bold text-purple-300 mb-2">20+</h4>
-          <p className="text-slate-400 text-sm">{t('about.stats.sections')}</p>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.1 }}
-          className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20 text-center"
-        >
-          <BookOpen className="w-12 h-12 text-blue-400 mx-auto mb-3" />
-          <h4 className="text-3xl font-bold text-purple-300 mb-2">100%</h4>
-          <p className="text-slate-400 text-sm">{t('about.stats.free')}</p>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2 }}
-          className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20 text-center"
-        >
-          <Zap className="w-12 h-12 text-green-400 mx-auto mb-3" />
-          <h4 className="text-3xl font-bold text-purple-300 mb-2">2</h4>
-          <p className="text-slate-400 text-sm">{t('about.stats.languages')}</p>
-        </motion.div>
+      <div className="grid md:grid-cols-3 gap-8 mt-12 pb-20">
+        {[
+          { icon: Award, value: "20+", label: t('about.stats.sections'), color: "text-yellow-400" },
+          { icon: BookOpen, value: "100%", label: t('about.stats.free'), color: "text-blue-400" },
+          { icon: Zap, value: "2", label: t('about.stats.languages'), color: "text-green-400" }
+        ].map((stat, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: i * 0.1 }}
+            className="glass-dark rounded-3xl p-8 border border-white/5 text-center group"
+          >
+            <stat.icon className={`w-12 h-12 ${stat.color} mx-auto mb-4 group-hover:scale-110 transition-transform`} />
+            <h4 className="text-4xl font-black text-white mb-2">{stat.value}</h4>
+            <p className="text-slate-400 font-bold uppercase tracking-widest text-xs">{stat.label}</p>
+          </motion.div>
+        ))}
       </div>
     </motion.div>
   );

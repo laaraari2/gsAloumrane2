@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { markSectionVisited } from './lib/storage';
 import { useAuth } from './contexts/AuthContext';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import ProtectedRoute from './components/ProtectedRoute';
 import Login from './components/sections/Login';
+import Hub from './components/sections/Hub';
 import Home from './components/sections/Home';
 import Search from './components/sections/Search';
 import QuickReview from './components/sections/QuickReview';
@@ -22,23 +24,40 @@ import MindMaps from './components/sections/MindMaps';
 import HowToAnswer from './components/sections/HowToAnswer';
 import SampleAnswers from './components/sections/SampleAnswers';
 import Quiz from './components/sections/Quiz';
+import FiguresStyle from './components/sections/FiguresStyle';
+import Timeline from './components/sections/Timeline';
 import Notes from './components/sections/Notes';
 import Bookmarks from './components/sections/Bookmarks';
 import Ecrits from './components/sections/Ecrits';
 import Audio from './components/sections/Audio';
 import Examen from './components/sections/Examen';
+import ExamSimulator from './components/sections/ExamSimulator';
 import About from './components/sections/About';
+import Guide from './components/sections/Guide';
+import Scenes from './components/sections/Scenes';
 
 function App() {
   const location = useLocation();
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const { loading } = useAuth();
 
   useEffect(() => {
     document.documentElement.lang = i18n.language;
     document.documentElement.dir = i18n.dir(i18n.language);
     document.body.className = i18n.language === 'ar' ? 'font-arabic' : 'font-sans';
-  }, [i18n.language]);
+    
+    // Update document title dynamically
+    const pathParts = location.pathname.split('/').filter(Boolean);
+    const bookId = pathParts[0];
+
+    if (!bookId || bookId === 'login') {
+      document.title = t('app.hub_title');
+    } else if (['antigone', 'boite', 'condamne'].includes(bookId)) {
+      document.title = t(`hub.works.${bookId}.title`);
+    } else {
+      document.title = t('app.title');
+    }
+  }, [i18n.language, location.pathname, t]);
 
   // Track section visits
   useEffect(() => {
@@ -64,6 +83,8 @@ function App() {
       '/quick-review': 'quick_review',
       '/progress': 'progress',
       '/about': 'about',
+      '/guide': 'guide',
+      '/scenes': 'scenes',
     };
     const sectionKey = sectionMap[location.pathname];
     if (sectionKey) {
@@ -90,267 +111,369 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/login" element={<Login />} />
           <Route
+            path="/guide"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-48 pb-20">
+                    <Guide />
+                  </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
             path="/"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <Hub />
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-20 md:pt-48 pb-12">
                     <Home />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/search"
+            path="/:bookId/personnages"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
-                    <Search />
-                  </main>
-                </>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/quick-review"
-            element={
-              <ProtectedRoute>
-                <>
-                  <Header />
-                  <main className="container mx-auto px-4 pt-48">
-                    <QuickReview />
-                  </main>
-                </>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/progress"
-            element={
-              <ProtectedRoute>
-                <>
-                  <Header />
-                  <main className="container mx-auto px-4 pt-48">
-                    <Progress />
-                  </main>
-                </>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/personnages"
-            element={
-              <ProtectedRoute>
-                <>
-                  <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-20 md:pt-48">
                     <Characters />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/oeuvre"
+            path="/:bookId/search"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
+                    <Search />
+                  </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId/quick-review"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
+                    <QuickReview />
+                  </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId/progress"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
+                    <Progress />
+                  </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId/personnages"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
+                    <Characters />
+                  </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId/oeuvre"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Oeuvre />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/themes"
+            path="/:bookId/themes"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Themes />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/citations"
+            path="/:bookId/citations"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Quotes />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/fiche"
+            path="/:bookId/fiche"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Fiche />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/comparison"
+            path="/:bookId/comparison"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Comparison />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/glossary"
+            path="/:bookId/glossary"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Glossary />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/mindmaps"
+            path="/:bookId/mindmaps"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <MindMaps />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/howto"
+            path="/:bookId/howto"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <HowToAnswer />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/sample-answers"
+            path="/:bookId/sample-answers"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <SampleAnswers />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/quiz"
+            path="/:bookId/quiz"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Quiz />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/notes"
+            path="/:bookId/figures-style"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
+                    <FiguresStyle />
+                  </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId/timeline"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
+                    <Timeline />
+                  </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId/notes"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Notes />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/bookmarks"
+            path="/:bookId/bookmarks"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Bookmarks />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/ecrits"
+            path="/:bookId/ecrits"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Ecrits />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/audio"
+            path="/:bookId/audio"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Audio />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/examen"
+            path="/:bookId/examen"
             element={
               <ProtectedRoute>
                 <>
                   <Header />
-                  <main className="container mx-auto px-4 pt-48">
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
                     <Examen />
                   </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }
           />
           <Route
-            path="/about"
+            path="/:bookId/exam-simulator"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-24 md:pt-72">
+                    <ExamSimulator />
+                  </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId/about"
             element={
               <ProtectedRoute>
                 <>
@@ -358,6 +481,35 @@ function App() {
                   <main className="container mx-auto px-4 pt-48">
                     <About />
                   </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId/guide"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-48 pb-20">
+                    <Guide />
+                  </main>
+                  <Footer />
+                </>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/:bookId/scenes"
+            element={
+              <ProtectedRoute>
+                <>
+                  <Header />
+                  <main className="container mx-auto px-4 pt-20 md:pt-48">
+                    <Scenes />
+                  </main>
+                  <Footer />
                 </>
               </ProtectedRoute>
             }

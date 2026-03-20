@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { BarChart3, Clock, BookOpen, Trophy, TrendingUp, Target } from 'lucide-react';
 import { getProgress, QuizResult } from '../../lib/storage';
 
 const Progress: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
   const [progress, setProgress] = useState(getProgress());
 
   useEffect(() => {

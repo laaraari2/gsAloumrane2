@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { FileText, BookOpen, Edit3, ChevronDown, ChevronUp, Star, CheckCircle } from 'lucide-react';
 
 const SampleAnswers: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
   const [expandedAnswer, setExpandedAnswer] = useState<number | null>(null);
 
   const answers = t('sample_answers.answers', { returnObjects: true }) as Array<{

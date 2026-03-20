@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { StickyNote, Plus, Edit2, Trash2, Save, X } from 'lucide-react';
 import { getNotes, saveNote, deleteNote, Note } from '../../lib/storage';
 
 const Notes: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
   const [notes, setNotes] = useState<Note[]>(getNotes());
   const [editingNote, setEditingNote] = useState<Note | null>(null);
   const [showForm, setShowForm] = useState(false);

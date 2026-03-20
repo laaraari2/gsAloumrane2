@@ -1,0 +1,695 @@
+{
+  "home": {
+    "title": "Résumé",
+    "p1_part1": "Le Dernier Jour d'un Condamné de Victor Hugo est un plaidoyer puissant contre la peine de mort. Publié en",
+    "p1_part2": "1829",
+    "p1_part3": "initialement de manière anonyme pour éviter la censure et renforcer le message humain du roman.",
+    "p2_part1": "Le roman prend la forme d'un journal intime d'un prisonnier condamné à mort, décrivant sa souffrance psychologique et physique au cours de ses six dernières semaines dans sa cellule à",
+    "p2_part2": "Bicêtre",
+    "p2_part3": ".",
+    "p3_part1": "À travers le journal du prisonnier, Hugo vous fait ressentir la",
+    "p3_part2": "terreur",
+    "p3_part3": "qui précède la mort attendue, et met en lumière le système judiciaire et la société où",
+    "p3_part4": "la vengeance l'emporte",
+    "p3_part5": "sur la justice."
+  },
+  "characters": {
+    "title": "Personnages",
+    "subtitle": "Les figures de l'attente tragique",
+    "le_condamne": {
+      "name": "Le Condamné",
+      "role": "Le Narrateur et Héros",
+      "description": "Jeune prisonnier, père d'une petite fille (Marie), et éduqué. On ne connaît ni son crime ni son nom, ce qui en fait le symbole de tout condamné face à l'échafaud.",
+      "traits": [
+        "Désespéré",
+        "Réfléchi",
+        "Tragique",
+        "Sensible"
+      ]
+    },
+    "marie": {
+      "name": "Marie",
+      "role": "La Fille",
+      "description": "La petite fille du condamné, âgée de trois ans. Elle est le symbole de l'innocence brisée par la peine de mort et la plus grande douleur du prisonnier.",
+      "traits": [
+        "Innocente",
+        "Oublieuse",
+        "Tragique"
+      ]
+    },
+    "le_guichetier": {
+      "name": "Le Guichetier",
+      "role": "Le Gardien",
+      "description": "Représente l'indifférence de l'administration carcérale. Il traite le condamné comme un numéro ou une curiosité.",
+      "traits": [
+        "Routinier",
+        "Froid",
+        "Indifférent"
+      ]
+    },
+    "le_pretre": {
+      "name": "Le Prêtre",
+      "role": "L'Aumônier",
+      "description": "Il apporte des paroles de réconfort machinées et sans âme, soulignant la solitude spirituelle du prisonnier.",
+      "traits": [
+        "Machinal",
+        "Insensible"
+      ]
+    },
+    "le_friauche": {
+      "name": "Le Friauche",
+      "role": "L'autre condamné",
+      "description": "Un vieux forçat qui représente le destin futur probable du prisonnier s'il avait été gracié pour les galères. C'est le double hideux du narrateur.",
+      "traits": [
+        "Brutal",
+        "Cynique",
+        "Expérimenté"
+      ]
+    },
+    "la_foule": {
+      "name": "La Foule",
+      "role": "Le public",
+      "description": "Elle attend l'exécution comme un spectacle. Elle représente la cruauté de la société qui se réjouit de la mort d'un homme.",
+      "traits": [
+        "Cruelle",
+        "Curieuse",
+        "Anonyme"
+      ]
+    }
+  },
+  "oeuvre": {
+    "title": "L'Œuvre",
+    "subtitle": "Analyse du Dernier Jour d'un Condamné",
+    "creation": {
+      "title": "Contexte de Création",
+      "content": "Publié en 1829, à une époque où la guillotine était un spectacle public, Victor Hugo écrit ce roman comme un cri contre la barbarie de la peine de mort. Il choisit l'anonymat pour le héros afin d'universaliser la souffrance humaine."
+    },
+    "style": {
+      "title": "Style et Narration",
+      "content": "Le roman adopte la forme d'un journal intime (monologue intérieur), ce qui permet une immersion totale dans la psychologie du condamné. Le style est marqué par l'angoisse, l'urgence et une précision chirurgicale dans la description de l'horreur."
+    },
+    "vision": {
+      "title": "Vision de l'Œuvre",
+      "content": "Hugo développe une vision abolitionniste radicale. Pour lui, la peine de mort est une double peine : elle tue un homme et punit son innocente famille. L'œuvre vise à transformer le lecteur en témoin de l'agonie psychologique du captif."
+    },
+    "le_combat_hugo": {
+      "title": "Le Combat de Victor Hugo",
+      "content": "Victor Hugo considérait la peine de mort comme une 'légalité barbare'. Ce roman est né de son indignation en voyant le bourreau graisser la guillotine sur la place de Grève. C'est un texte qui a ouvert la voie à l'abolition en France."
+    },
+    "symboles_condamne": {
+      "title": "Symboles et Images Clés",
+      "content": "La Guillotine (la veuve, machine aveugle), les inscriptions sur les murs (mémoire des autres condamnés), le ferrage des forçats (bestialité humaine), le rire de Marie (l'innocence qui ne reconnaît plus son père)."
+    }
+  },
+  "themes": {
+    "title": "Les Thèmes Majeurs",
+    "subtitle": "Les sujets principaux du roman",
+    "souffrance_psy": {
+      "title": "La Souffrance Psychologique",
+      "description": "Le prisonnier décrit les détails de son tourment intérieur et de sa peur de l'inconnu les jours précédant l'exécution et les horreurs de l'attente de la guillotine."
+    },
+    "inhumanite": {
+      "title": "Inhumanité et Cruauté",
+      "description": "Regard sur le système pénal et judiciaire impitoyable et sur les gardiens qui traitent la mort avec une froideur professionnelle dénuée de tout sentiment."
+    },
+    "espoir": {
+      "title": "L'Espoir Absurde",
+      "description": "Malgré la certitude de la mort, le prisonnier s'accroche toujours au mince espoir d'une grâce royale pour s'évanouir dans les derniers instants."
+    },
+    "souvenirs": {
+      "title": "Souvenirs du Passé",
+      "description": "Évasion du prisonnier de sa réalité terrible vers ses souvenirs d'enfance et d'avant le crime pour oublier un peu la cruauté du présent."
+    },
+    "fatalite": {
+      "title": "Fatalité et Destin",
+      "description": "Le temps s'écoule inexorablement et la guillotine approche comme une machine du destin qui déracine sa vie malgré lui, soulignant l'impuissance de l'homme face à la mort."
+    },
+    "justice": {
+      "title": "La Justice Humaine",
+      "description": "L'échec de la justice humaine à rétablir l'équilibre. Elle assassine un homme, laissant une famille entière victime de la société, sans chercher à réparer l'erreur du coupable."
+    }
+  },
+  "quotes": {
+    "title": "Citations Majeures",
+    "subtitle": "Paroles rattachées au Dernier Jour d'un Condamné",
+    "q1": {
+      "text": "Je laisse une mère, je laisse une femme, je laisse un enfant. Une petite fille de trois ans...",
+      "speaker": "Le Condamné",
+      "context": "Réflexion sur les victimes collatérales de son exécution."
+    },
+    "q2": {
+      "text": "Mon pourvoi sera rejeté, parce que tout est en règle.",
+      "speaker": "Le Condamné",
+      "context": "Constat lucide sur l'engrenage judiciaire."
+    },
+    "q3": {
+      "text": "La pensée de la mort est la seule qui me soit présente ; ce n'est qu'avec elle que je vis maintenant.",
+      "speaker": "Le Condamné",
+      "context": "Description de son obsession fatale."
+    },
+    "q4": {
+      "text": "Ceux qui me jugent ne souffrent pas. C'est facile de tuer quand on n'a pas mal.",
+      "speaker": "Le Condamné",
+      "context": "Critique de l'indifférence des juges."
+    },
+    "q5": {
+      "text": "Cinq semaines d'agonie psychologique, captif d'une seule idée : la mort.",
+      "speaker": "Le Condamné",
+      "context": "Résumé de son séjour à Bicêtre."
+    },
+    "q6": {
+      "text": "J’ai laissé une lettre, j'espère qu'elle la lira un jour, qu'elle comprendra, et qu'elle pleurera sur moi.",
+      "speaker": "Le Condamné",
+      "context": "Dernier message destiné à sa fille Marie."
+    }
+  },
+  "fiche": {
+    "title": "Fiche de Lecture",
+    "subtitle": "Les informations essentielles de l'œuvre",
+    "identity": {
+      "title": "Identité Littéraire",
+      "author": "Auteur",
+      "author_value": "Victor Hugo",
+      "full_title": "Titre Complet",
+      "full_title_value": "Le Dernier Jour d'un Condamné",
+      "genre": "Genre",
+      "genre_value": "Roman à thèse",
+      "date": "Date d'écriture",
+      "date_value": "1829",
+      "first_perf": "Date de publication",
+      "first_perf_value": "1829"
+    },
+    "characters_section": {
+      "title": "Personnages Principaux",
+      "le_condamne": "Le Condamné : Le protagoniste, prisonnier condamné à mort",
+      "marie": "Marie : La fille du condamné (3 ans)",
+      "le_guichetier": "Les guichetiers, les prêtres, le bourreau : Personnages secondaires",
+      "la_foule": "La foule : Avide de voir l'exécution"
+    },
+    "schema": {
+      "title": "Schéma narratif",
+      "prologue": "Situation initiale : Condamnation et arrivée à Bicêtre",
+      "element": "Élément perturbateur : L'attente et la notification du jour de l'exécution",
+      "peripeties": "Péripéties : Le transfert et les adieux déchirants avec Marie",
+      "denouement": "Résolution : Arrivée sur la place de Grève, perte d'espoir",
+      "final": "Situation finale : L'exécution tombe à 4 heures"
+    },
+    "themes_section": {
+      "title": "Thèmes Majeurs",
+      "items": "La mort, la justice, la cruauté, la famille, la torture morale, l'attente."
+    }
+  },
+  "quiz_rapide": {
+    "title": "Quiz Rapide",
+    "subtitle": "Testez rapidement vos connaissances sur l'œuvre",
+    "start_button": "Commencer le quiz",
+    "next_button": "Question suivante",
+    "restart_button": "Recommencer",
+    "score_text": "Votre score",
+    "final_message_good": "Excellent travail ! Vous maîtrisez bien l'œuvre.",
+    "final_message_medium": "Pas mal ! Continuez à réviser pour consolider vos connaissances.",
+    "final_message_bad": "Il y a encore du travail. N'hésitez pas à relire la fiche et les autres sections.",
+    "questions": [
+      {
+        "question": "Qui est l'auteur de 'Le Dernier Jour d'un Condamné' ?",
+        "options": ["Jean Anouilh", "Victor Hugo", "Ahmed Sefrioui", "Molière"],
+        "correctAnswer": "Victor Hugo",
+        "explanation": "Victor Hugo a écrit ce roman pour exprimer sa position humaniste contre la peine de mort."
+      },
+      {
+        "question": "Quel est le but principal de ce roman ?",
+        "options": ["Une histoire d'amour", "L'abolition de la peine de mort", "Décrire les prisons", "L'histoire de France"],
+        "correctAnswer": "L'abolition de la peine de mort",
+        "explanation": "Le roman est un plaidoyer puissant pour l'abolition de la peine de mort."
+      },
+      {
+        "question": "Combien de temps dure l'agonie du prisonnier dans le récit ?",
+        "options": ["2 semaines", "1 mois", "6 semaines", "1 an"],
+        "correctAnswer": "6 semaines",
+        "explanation": "Le narrateur décrit sa souffrance au cours des six dernières semaines de sa vie."
+      },
+      {
+        "question": "Quel est le nom de la fille du condamné ?",
+        "options": ["Antigone", "Marie", "Ismène", "Jocaste"],
+        "correctAnswer": "Marie",
+        "explanation": "Marie est sa petite fille qui ne le reconnaît pas lors de sa visite."
+      },
+      {
+        "question": "Où l'exécution a-t-elle finalement lieu ?",
+        "options": ["Bicêtre", "Place de Grève", "Conciergerie", "Palais de Justice"],
+        "correctAnswer": "Place de Grève",
+        "explanation": "La place de Grève était le lieu habituel des exécutions à Paris."
+      },
+      {
+        "question": "Quel est le style dominant du récit ?",
+        "options": ["Narration externe", "Monologue intérieur", "Épistolaire", "Théâtral"],
+        "correctAnswer": "Monologue intérieur",
+        "explanation": "Le lecteur vit dans la tête du prisonnier à travers son journal intime."
+      },
+      {
+        "question": "Dans quelle prison commence l'histoire ?",
+        "options": ["Bastille", "Bicêtre", "La Roquette", "Toulon"],
+        "correctAnswer": "Bicêtre",
+        "explanation": "Le condamné passe la majeure partie de son temps initial à la prison de Bicêtre."
+      },
+      {
+        "question": "Quelle pensée occupe l'esprit du condamné en permanence ?",
+        "options": ["L'évasion", "La vengeance", "La mort", "Le regret"],
+        "correctAnswer": "La mort",
+        "explanation": "La pensée de la mort est omniprésente et devient son unique compagne."
+      },
+      {
+        "question": "Pourquoi le crime du condamné n'est-il jamais précisé ?",
+        "options": ["Parce qu'il est trop horrible", "Pour universaliser la souffrance", "Parce que c'est sans importance", "Pour tromper le lecteur"],
+        "correctAnswer": "Pour universaliser la souffrance",
+        "explanation": "Victor Hugo veut défendre l'homme indépendamment de son crime."
+      },
+      {
+        "question": "À quelle heure le condamné est-il exécuté ?",
+        "options": ["Midi", "2 heures", "4 heures", "Minuit"],
+        "correctAnswer": "4 heures",
+        "explanation": "L'exécution est fixée et réalisée à quatre heures précises."
+      }
+    ]
+  },
+  "audio": {
+    "title": "Version Audio",
+    "subtitle": "Les derniers souffles du condamné",
+    "placeholder_title": "Lecteur audio",
+    "placeholder_text": "L'audio permet de ressentir l'urgence et l'angoisse de l'attente.",
+    "speaker_label": "Extrait :",
+    "clips": [
+      {
+        "title": "Le Jugement",
+        "speaker": "Le Condamné",
+        "description": "Le moment où le mot fatal est prononcé par le président du tribunal.",
+        "src": "audio/condamne_jugement.mp3"
+      },
+      {
+        "title": "La Visite de Marie",
+        "speaker": "Le Père et sa Fille",
+        "description": "Le dialogue déchirant où Marie ne reconnaît pas son père.",
+        "src": "audio/condamne_marie.mp3"
+      },
+      {
+        "title": "L'Hôtel de Ville",
+        "speaker": "La Foule",
+        "description": "Le bruit de la foule avide de spectacle avant l'exécution.",
+        "src": "audio/condamne_foule.mp3"
+      }
+    ]
+  },
+  "examen": {
+    "title": "Mode Examen",
+    "subtitle": "Questions types sur Le Dernier Jour d'un Condamné",
+    "comprehension_title": "I. Questions de compréhension",
+    "analysis_title": "II. Analyse de texte",
+    "writing_title": "III. Production écrite",
+    "writing_placeholder": "Rédigez votre réponse ici...",
+    "show_answer_points": "Voir les points de réponse",
+    "show_analysis_points": "Voir les points clés de l'analyse",
+    "show_writing_points": "Voir les pistes de correction",
+    "comprehension_questions": [
+      {
+        "question": "Pourquoi Victor Hugo a-t-il initialement publié le roman anonymement ?",
+        "points": [
+          "Pour éviter la censure politique.",
+          "Pour que le lecteur se concentre sur le message humaniste.",
+          "Pour universaliser le personnage du condamné.",
+          "Pour renforcer l'aspect authentique du 'journal retrouvé'."
+        ]
+      },
+      {
+        "question": "Quel est le rôle de la petite Marie dans l'économie du roman ?",
+        "points": [
+          "Elle représente l'innocence sacrifiée.",
+          "Elle souligne la cruauté de la peine de mort qui punit aussi les proches.",
+          "Sa visite marque le point de rupture affectif final du condamné.",
+          "Elle est le seul lien pur avec le passé."
+        ]
+      },
+      {
+        "question": "Pourquoi le crime du condamné n'est-il jamais révélé dans le roman ?",
+        "points": [
+          "Pour universaliser le personnage : n'importe quel condamné.",
+          "Pour éviter que le lecteur juge le personnage.",
+          "Pour centrer le débat sur la peine et non sur le crime.",
+          "Le message humaniste prime sur l'intrigue."
+        ]
+      },
+      {
+        "question": "Quelle est la structure narrative adoptée par Hugo dans ce roman ?",
+        "points": [
+          "Récit à la première personne (journal intime).",
+          "Narration au présent pour créer l'urgence.",
+          "49 chapitres courts comme un compte à rebours.",
+          "Monologue intérieur qui plonge le lecteur dans la psyché du condamné."
+        ]
+      }
+    ],
+    "analysis_questions": [
+      {
+        "quote": "Condamné à mort ! Voilà cinq semaines que j'habite avec cette pensée, toujours seul avec elle, toujours glacé de sa présence, toujours courbé sous son poids !",
+        "question": "Analysez les procédés stylistiques utilisés dans cet incipit et leur effet sur le lecteur.",
+        "points": [
+          "Phrase nominale percutante qui crée un choc immédiat.",
+          "Personnification de la pensée de la mort ('glacé de sa présence').",
+          "Accumulation et rythme ternaire ('toujours seul... toujours glacé... toujours courbé').",
+          "Le présent d'énonciation plonge le lecteur dans l'instant vécu."
+        ]
+      },
+      {
+        "quote": "Je laisse une mère, je laisse une femme, je laisse un enfant. Une petite fille de trois ans, douce, rose, frêle...",
+        "question": "Comment Hugo utilise-t-il cette évocation familiale pour servir sa thèse ?",
+        "points": [
+          "Anaphore de 'je laisse' qui martèle la perte.",
+          "Gradation affective : mère → femme → enfant (le plus vulnérable).",
+          "Adjectifs tendres ('douce, rose, frêle') qui accentuent l'injustice.",
+          "La peine de mort ne tue pas seulement le condamné mais détruit toute une famille."
+        ]
+      },
+      {
+        "quote": "Ceux qui me jugent ne souffrent pas. C'est facile de tuer quand on n'a pas mal.",
+        "question": "En quoi cette réplique constitue-t-elle une critique du système judiciaire ?",
+        "points": [
+          "Opposition entre la souffrance du condamné et l'indifférence des juges.",
+          "Ironie tragique : les juges 'tuent' légalement sans remords.",
+          "Critique de la déshumanisation de la justice.",
+          "Le mot 'facile' dénonce la banalisation de la mort."
+        ]
+      }
+    ],
+    "writing_prompts": [
+      {
+        "prompt": "Dans un texte argumentatif, montrez comment Victor Hugo utilise le roman 'Le Dernier Jour d'un Condamné' comme arme contre la peine de mort.",
+        "points": [
+          "Introduction : Contextualiser l'œuvre (1829, débat sur l'abolition).",
+          "Thèse : Le roman est un plaidoyer humaniste contre la peine capitale.",
+          "Argument 1 : Le choix du monologue intérieur pour créer l'empathie.",
+          "Argument 2 : L'anonymat du crime pour universaliser la cause.",
+          "Argument 3 : Les scènes pathétiques (visite de Marie, ferrage des forçats).",
+          "Conclusion : L'impact du roman sur le mouvement abolitionniste."
+        ]
+      },
+      {
+        "prompt": "Pensez-vous que la littérature puisse changer la société ? Appuyez-vous sur 'Le Dernier Jour d'un Condamné' et d'autres exemples.",
+        "points": [
+          "Introduction : La littérature engagée et son rôle social.",
+          "Argument 1 : Hugo a contribué au débat abolitionniste par ce roman.",
+          "Argument 2 : D'autres œuvres engagées (Zola, Voltaire, Camus).",
+          "Argument 3 : La littérature sensibilise, émeut et pousse à l'action.",
+          "Nuance : La littérature seule ne suffit pas, elle accompagne les mouvements sociaux.",
+          "Conclusion : La force de la plume comme levier de changement."
+        ]
+      }
+    ]
+  },
+  "exam_simulator": {
+    "title": "Simulateur d'Examen Régional",
+    "subtitle": "Testez-vous dans des conditions réelles. Vous avez 15 minutes.",
+    "questions": [
+      {
+        "id": 1,
+        "type": "comprehension",
+        "text": "Où se trouvait le narrateur au début du récit ?",
+        "modelAnswer": [
+          "À la prison de Bicêtre",
+          "À Bicêtre"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "analysis",
+        "quote": "Voilà cinq semaines que j'habite avec cette pensée, toujours seul avec elle, toujours glacé de sa présence, toujours courbé sous son poids !",
+        "text": "Quelle est la figure de style employée dans « glacé de sa présence, courbé sous son poids » concernant la pensée de la mort ?",
+        "modelAnswer": [
+          "Une personnification",
+          "La personnification"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "comprehension",
+        "text": "Quel âge a la fille du condamné, Marie ?",
+        "modelAnswer": [
+          "Trois ans",
+          "3 ans"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "analysis",
+        "quote": "J'ai laissé une lettre pour elle.",
+        "text": "Pourquoi le narrateur rédige-t-il ce journal intime en attendant son exécution ?",
+        "modelAnswer": [
+          "Pour laisser un message à sa fille",
+          "Pour servir de leçon aux juges",
+          "Pour plaider l'abolition de la peine de mort",
+          "Pour soulager son angoisse"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "comprehension",
+        "text": "Sur quelle place se déroule l'exécution finale ?",
+        "modelAnswer": [
+          "Place de Grève"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "analysis",
+        "text": "Quel est le but ultime de Victor Hugo à travers ce journal intime ?",
+        "modelAnswer": [
+          "L'abolition de la peine de mort",
+          "Prouver que la peine de mort est une boucherie",
+          "Dénoncer la loi de sang"
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Chronologie",
+    "subtitle": "Les moments clés du Dernier Jour d'un Condamné",
+    "events": [
+      {
+        "time": "Bicêtre - 6 semaines",
+        "title": "Le Procès et le Jugement",
+        "description": "Le prisonnier se remémore avec angoisse le moment de sa condamnation et ce mot fatal tant redouté."
+      },
+      {
+        "time": "Chapitre 13",
+        "title": "Le Ferrage des Forçats",
+        "description": "Scène horrible où le narrateur assiste à la préparation des autres criminels pour les travaux forcés, y trouvant une souffrance pire que son exécution."
+      },
+      {
+        "time": "Chapitre 22",
+        "title": "Le Transfert",
+        "description": "Son transfert de la prison de Bicêtre à la Conciergerie, qui est la dernière étape avant la place de Grève."
+      },
+      {
+        "time": "Conciergerie",
+        "title": "La Visite de Marie",
+        "description": "Sa fille de trois ans lui rend visite dans sa cellule, mais elle ne le reconnaît pas et lui annonce avec innocence que son père est décédé, brisant définitivement le cœur du condamné."
+      },
+      {
+        "time": "Chapitre 48",
+        "title": "Vers l'Hôtel de Ville",
+        "description": "Le transfert du criminel vers l'Hôtel de Ville puis vers la place de Grève, où une foule extasiée s'entasse pour assister au spectacle."
+      },
+      {
+        "time": "4 heures",
+        "title": "Les Derniers Instants et l'Ultime Supplique",
+        "description": "Au pied de l'échafaud, il supplie le bourreau et lui demande cinq minutes de répit dans l'espoir d'une grâce royale, mais il est finalement guillotiné à quatre heures."
+      }
+    ]
+  },
+  "quick_review": {
+    "title": "Révision Rapide",
+    "subtitle": "Informations essentielles sur l'œuvre",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "characters": {
+      "title": "Personnages Principaux"
+    },
+    "themes": {
+      "title": "Thèmes Essentiels"
+    },
+    "key_info": {
+      "title": "Informations Clés",
+      "author": "Auteur",
+      "date": "Date",
+      "genre": "Genre",
+      "context": "Contexte",
+      "context_value": "La France du XIXe siècle (combat contre la peine de mort)"
+    }
+  },
+  "flashcards": {
+    "title": "Cartes de Révision",
+    "subtitle": "Révisez l'essentiel en quelques secondes",
+    "flip_hint": "Cliquez sur la carte pour voir la réponse",
+    "cards": [
+      {
+        "q": "Qui est l'auteur ?",
+        "a": "Victor Hugo"
+      },
+      {
+        "q": "L'année de publication ?",
+        "a": "1829"
+      },
+      {
+        "q": "Le genre ?",
+        "a": "Roman à thèse"
+      },
+      {
+        "q": "Le thème central ?",
+        "a": "L'abolition de la peine de mort"
+      },
+      {
+        "q": "Le lieu de l'exécution ?",
+        "a": "La place de Grève"
+      }
+    ]
+  },
+  "progress": {
+    "title": "Mon Progrès",
+    "subtitle": "Suivi de votre préparation"
+  },
+  "notes": {
+    "title": "Mes Notes",
+    "subtitle": "Espace personnel pour vos réflexions"
+  },
+  "bookmarks": {
+    "title": "Mes Signets",
+    "subtitle": "Vos passages favoris"
+  },
+  "about": {
+    "title": "À Propos",
+    "subtitle": "Détails sur cette analyse"
+  },
+  "ecrits": {
+    "title": "Écrits d'élèves",
+    "subtitle": "Exemples de productions écrites"
+  },
+  "glossary": {
+    "title": "Glossaire Juridique et Carcéral",
+    "subtitle": "Comprendre les termes de la justice et de la prison du XIXe siècle",
+    "search_placeholder": "Rechercher (ex: Grève, Pourvoi, Argot...)",
+    "example": "Contexte",
+    "no_results": "Aucun résultat trouvé dans le glossaire.",
+    "terms": [
+      {
+        "term": "Bicêtre",
+        "definition": "Prison-hôpital située près de Paris. C'est le premier lieu de détention du narrateur où il observe le ferrage des forçats.",
+        "example": "Bicêtre est un lieu de souffrance et de dégradation humaine."
+      },
+      {
+        "term": "La Conciergerie",
+        "definition": "Ancienne prison royale sur l'Île de la Cité, où le condamné attend son exécution après le rejet de son pourvoi.",
+        "example": "Le transfert à la Conciergerie marque une étape de plus vers la fin."
+      },
+      {
+        "term": "Place de Grève",
+        "definition": "Place devant l'Hôtel de Ville de Paris où se déroulaient publiquement les exécutions à la guillotine.",
+        "example": "La foule se rassemble sur la Place de Grève pour assister au spectacle de la mort."
+      },
+      {
+        "term": "Guillotine",
+        "definition": "Machine de décapitation introduite pendant la Révolution pour rendre les exécutions 'égales' et 'sans douleur'.",
+        "example": "Victor Hugo dénonce la barbarie de la guillotine tout au long du roman."
+      },
+      {
+        "term": "Pourvoi en cassation",
+        "definition": "Recours juridique suprême visant à faire annuler un jugement pour vice de forme. C'est l'ultime espoir du condamné.",
+        "example": "L'attente du résultat du pourvoi est une torture psychologique insupportable."
+      },
+      {
+        "term": "La Grâce",
+        "definition": "Droit régalien permettant au roi de commuer une peine de mort en travaux forcés. Le narrateur l'attend désespérément.",
+        "example": "Le condamné espère jusqu'à la dernière minute un courrier apportant la grâce royale."
+      },
+      {
+        "term": "Forçats",
+        "definition": "Condamnés aux travaux forcés (souvent à vie au bagne de Toulon). Ils sont liés par des chaînes au cou lors du ferrage.",
+        "example": "Le spectacle du ferrage des forçats inspire à la fois horreur et pitié au narrateur."
+      },
+      {
+        "term": "Argot",
+        "definition": "Langage particulier utilisé par les criminels et les prisonniers (la 'chiourme') pour ne pas être compris des autorités.",
+        "example": "Le narrateur est fasciné et dégoûté par cet 'argot' qui pue le crime."
+      },
+      {
+        "term": "Cachot",
+        "definition": "Cellule de prison étroite, souvent sombre et humide, où le prisonnier est isolé.",
+        "example": "Le narrateur dessine sur les murs de son cachot pour tromper sa solitude."
+      },
+      {
+        "term": "Le Bagne",
+        "definition": "Lieu de détention où les condamnés effectuent des travaux forcés (Toulon, Brest, Rochefort).",
+        "example": "Le narrateur préfère presque la mort à l'idée de finir ses jours au bagne."
+      }
+    ]
+  },
+  "mindmaps": {
+    "title": "Cartes Mentales",
+    "subtitle": "Résumés visuels de l'œuvre"
+  },
+  "howto": {
+    "title": "Comment Répondre",
+    "subtitle": "Méthodologie d'analyse des textes"
+  },
+  "sample_answers": {
+    "title": "Réponses types",
+    "subtitle": "Modèles de réponses aux examens"
+  },
+  "figures_style": {
+    "title": "Figures de Style",
+    "subtitle": "Analyse des procédés littéraires dans Le Dernier Jour d'un Condamné",
+    "list": [
+      {
+        "name": "Personnification",
+        "definition": "Donner des traits humains à un objet ou une idée.",
+        "examples": [
+          {
+            "text": "Cette pensée infernale est comme un plomb qui m'écrase.",
+            "context": "Le narrateur décrit l'obsession de la mort."
+          }
+        ]
+      },
+      {
+        "name": "Métaphore",
+        "definition": "Rapprochement de deux idées sans outil de comparaison.",
+        "examples": [
+          {
+            "text": "Le bourreau, cet officier de la guillotine.",
+            "context": "Hugo critique froidement l'administration de la mort."
+          }
+        ]
+      },
+      {
+        "name": "Hyperbole",
+        "definition": "Exagération forte.",
+        "examples": [
+          {
+            "text": "Une mer de têtes.",
+            "context": "Description de la foule immense venue assister à l'exécution."
+          }
+        ]
+      },
+      {
+        "name": "Antithèse",
+        "definition": "Opposition entre deux termes contraires.",
+        "examples": [
+          {
+            "text": "Des vivants qui jugent un mort.",
+            "context": "Le contraste entre les juges et le condamné promis à l'échafaud."
+          }
+        ]
+      }
+    ]
+  },
+  "search": {
+    "title": "Recherche",
+    "subtitle": "Chercher dans le contenu"
+  }
+}

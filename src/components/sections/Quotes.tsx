@@ -1,54 +1,57 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Quote as QuoteIcon } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
-
-const quoteKeys = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'];
-
+import { useBook } from '../../hooks/useBook';
 const Quotes: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useBook();
+
+  const quotesData = t('quotes', { returnObjects: true }) as Record<string, any>;
+  const quoteKeys = Object.keys(quotesData || {}).filter(
+    key => key !== 'title' && key !== 'subtitle'
+  );
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="max-w-4xl mx-auto"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      className="max-w-5xl mx-auto"
     >
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-6xl font-black mb-4 text-gradient text-shadow-glow">
           {t('quotes.title')}
         </h2>
-        <p className="text-slate-400">{t('quotes.subtitle')}</p>
+        <p className="text-slate-400 font-medium tracking-wide uppercase text-sm opacity-80">{t('quotes.subtitle')}</p>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-10">
         {quoteKeys.map((key, index) => {
-          const isRtl = i18n.dir() === 'rtl';
-          const initialX = (index % 2 === 0 ? -50 : 50) * (isRtl ? -1 : 1);
-
           return (
             <motion.div
               key={key}
-              initial={{ x: initialX, opacity: 0 }}
+              initial={{ x: index % 2 === 0 ? -30 : 30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: index * 0.15 }}
-              whileHover={{ scale: 1.02 }}
-              className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all"
+              transition={{ delay: index * 0.1 }}
+              className="glass card-hover rounded-[2.5rem] p-10 relative overflow-hidden group"
             >
-              <div className="flex items-start gap-4">
-                <div className="bg-purple-500/20 p-2 rounded-lg flex-shrink-0 mt-1">
-                  <QuoteIcon className="w-6 h-6 text-purple-400 transform -scale-x-100" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-3xl group-hover:bg-purple-500/10 transition-colors" />
+              
+              <div className="flex flex-col md:flex-row items-start gap-8 relative">
+                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 p-5 rounded-2xl border border-white/10 group-hover:rotate-12 transition-transform">
+                  <QuoteIcon className="w-10 h-10 text-purple-400 opacity-60" />
                 </div>
                 
                 <div className="flex-1">
-                  <blockquote className="text-lg md:text-xl text-purple-200 font-serif italic mb-4 leading-relaxed">
+                  <blockquote className="text-2xl md:text-3xl text-white font-serif italic mb-8 leading-relaxed font-medium">
                     "{t(`quotes.${key}.text`)}"
                   </blockquote>
                   
-                  <div className="text-end">
-                    <span className="text-pink-400 font-semibold">— {t(`quotes.${key}.speaker`)}</span>
-                    <p className="text-slate-400 text-sm mt-1">{t(`quotes.${key}.context`)}</p>
+                  <div className="flex items-center justify-end gap-4">
+                    <div className="h-px flex-1 bg-gradient-to-r from-transparent to-white/10" />
+                    <div className="text-right">
+                      <span className="text-xl font-black text-gradient block mb-1">{t(`quotes.${key}.speaker`)}</span>
+                      <p className="text-slate-400 font-bold tracking-widest uppercase text-xs opacity-70">{t(`quotes.${key}.context`)}</p>
+                    </div>
                   </div>
                 </div>
               </div>

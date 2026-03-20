@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { LogIn, User, Lock, AlertCircle, Code } from 'lucide-react';
+import LanguageSwitcher from '../LanguageSwitcher';
+
 
 const Login: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
+  const { t } = useBook();
   const navigate = useNavigate();
   const { login, isAuthenticated, loading: authLoading } = useAuth();
   const [username, setUsername] = useState('');
@@ -52,176 +56,136 @@ const Login: React.FC = () => {
     }
   };
 
-  // Show loading while checking auth
   if (authLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white">
+      <div className="min-h-screen flex items-center justify-center bg-slate-950">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">{i18n.language === 'ar' ? 'جاري التحميل...' : 'Chargement...'}</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500 mx-auto mb-4"></div>
+          <p className="text-slate-400 font-medium">{i18n.language === 'ar' ? 'جاري التحميل...' : 'Chargement...'}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4 py-12">
+    <div className="min-h-screen flex items-center justify-center bg-slate-950 px-4 py-12 relative overflow-hidden">
+      {/* Background blobs */}
+      <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-500/10 rounded-full blur-[120px]" />
+
+      <div className="absolute top-8 right-8 z-50">
+        <LanguageSwitcher />
+      </div>
+
+      <div className="absolute bottom-0 -right-4 w-72 h-72 bg-pink-500/10 rounded-full blur-[120px]" />
+
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="w-full max-w-md"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        className="w-full max-w-lg z-10"
       >
         {/* Welcome Section */}
-        <div className="text-center mb-8">
-          {/* Logo */}
+        <div className="text-center mb-10">
           <motion.div
             initial={{ scale: 0, rotate: -180 }}
             animate={{ scale: 1, rotate: 0 }}
-            transition={{ delay: 0.2, type: 'spring', stiffness: 200, damping: 15 }}
-            className="mx-auto mb-6 flex items-center justify-center relative"
+            transition={{ delay: 0.2, type: 'spring', stiffness: 200, damping: 20 }}
+            className="mx-auto mb-8 flex items-center justify-center relative"
           >
-            {/* Outer glow circle - Lighter version for light theme */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-100 via-pink-100 to-purple-100 blur-xl animate-pulse"></div>
+            <div className="absolute inset-0 rounded-full bg-purple-500/20 blur-3xl animate-pulse"></div>
             
-            {/* Main circle container */}
-            <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 p-1 shadow-lg border-2 border-purple-100">
-              {/* Inner gradient border */}
-              <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-50 via-pink-50 to-purple-50 p-1">
-                {/* Image container */}
-                <div className="w-full h-full rounded-full overflow-hidden bg-white flex items-center justify-center border border-gray-200">
-                  <img
-                    src={`${import.meta.env.VITE_BASE_URL || '/antigoneGs/'}logo-new.jpg?${new Date().getTime()}`}
-                    alt={t('login.institution_name')}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      // Fallback if image fails to load
-                      console.error('Failed to load logo image');
-                      const target = e.currentTarget;
-                      // Try alternative paths with cache busting
-                      const timestamp = `?${new Date().getTime()}`;
-                      const baseUrl = import.meta.env.VITE_BASE_URL || '/antigoneGs/';
-                      
-                      // Try different paths in sequence
-                      const tryPaths = [
-                        `${baseUrl}logo-new.jpg${timestamp}`,
-                        `${baseUrl}logo.jpg${timestamp}`,
-                        `/logo-new.jpg${timestamp}`,
-                        `/logo.jpg${timestamp}`,
-                        `./logo-new.jpg${timestamp}`,
-                        `./logo.jpg${timestamp}`,
-                      ];
-                      
-                      let currentIndex = 0;
-                      const tryNextPath = () => {
-                        if (currentIndex < tryPaths.length) {
-                          target.src = tryPaths[currentIndex];
-                          currentIndex++;
-                          
-                          // Check if image loaded successfully after a short delay
-                          setTimeout(() => {
-                            if (!target.complete || target.naturalWidth === 0) {
-                              tryNextPath();
-                            }
-                          }, 100);
-                        } else {
-                          // Hide image if all paths fail
-                          target.style.display = 'none';
-                        }
-                      };
-                      
-                      // Start trying paths
-                      tryNextPath();
-                    }}
-                    onLoad={() => {
-                      console.log('Logo image loaded successfully');
-                    }}
-                  />
-                </div>
+            <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full p-1.5 glass bg-white/5 border-white/10 shadow-2xl">
+              <div className="w-full h-full rounded-full overflow-hidden bg-slate-900/50 flex items-center justify-center border border-white/10 ring-4 ring-purple-500/10">
+                <img
+                  src={`${import.meta.env.VITE_BASE_URL || '/gsAloumrane2/'}logo-new.jpg?${new Date().getTime()}`}
+                  alt={t('login.institution_name')}
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    const timestamp = `?${new Date().getTime()}`;
+                    const baseUrl = import.meta.env.VITE_BASE_URL || '/gsAloumrane2/';
+                    const tryPaths = [
+                      `${baseUrl}logo-new.jpg${timestamp}`,
+                      `${baseUrl}logo.jpg${timestamp}`,
+                      `/logo-new.jpg${timestamp}`,
+                    ];
+                    let currentIndex = 0;
+                    const tryNextPath = () => {
+                      if (currentIndex < tryPaths.length) {
+                        target.src = tryPaths[currentIndex++];
+                        setTimeout(() => { if (!target.complete || target.naturalWidth === 0) tryNextPath(); }, 150);
+                      } else target.style.display = 'none';
+                    };
+                    tryNextPath();
+                  }}
+                />
               </div>
             </div>
             
-            {/* Decorative rings - Lighter version for light theme */}
             <motion.div
               animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-              className="absolute inset-0 rounded-full border-2 border-purple-200"
-              style={{ width: 'calc(100% + 8px)', height: 'calc(100% + 8px)', margin: '-4px' }}
+              transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
+              className="absolute inset-0 rounded-full border border-purple-500/20"
+              style={{ width: 'calc(100% + 24px)', height: 'calc(100% + 24px)', margin: '-12px' }}
             ></motion.div>
           </motion.div>
           
-          {/* Institution Name */}
           <motion.h1
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-2xl md:text-3xl font-bold font-serif text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-3"
+            className="text-3xl md:text-5xl font-black font-serif text-gradient text-shadow-glow mb-4"
           >
             {t('login.institution_name')}
           </motion.h1>
           
-          {/* Welcome Message */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-lg text-gray-600 mb-2"
+            className="text-xl text-slate-400 font-medium"
           >
             {t('login.welcome')}
           </motion.p>
-          
-          {/* Developer Credit */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="flex items-center justify-center gap-2 text-sm text-gray-500 mt-4"
-          >
-            <Code className="w-4 h-4" />
-            <span>{t('login.developer')}</span>
-          </motion.div>
         </div>
 
         {/* Login Form Card */}
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
-          {/* Form Header */}
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold font-serif text-gray-800 mb-2">
+        <div className="glass rounded-[2.5rem] p-10 md:p-12 relative overflow-hidden shadow-2xl border-white/10">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-3xl" />
+          
+          <div className="text-center mb-10 relative">
+            <h2 className="text-3xl font-black font-serif text-white mb-3">
               {t('login.title')}
             </h2>
-            <p className="text-gray-600 text-sm">{t('login.subtitle')}</p>
+            <p className="text-slate-400 font-medium tracking-wide uppercase text-xs">{t('login.subtitle')}</p>
           </div>
 
-          {/* Error Message */}
           {error && (
             <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center gap-3"
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="mb-8 p-4 bg-red-500/10 border border-red-500/20 rounded-2xl flex items-center gap-4"
             >
-              <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
-              <p className="text-red-700 text-sm">{error}</p>
+              <AlertCircle className="w-6 h-6 text-red-500 flex-shrink-0" />
+              <p className="text-red-200 text-sm font-semibold">{error}</p>
             </motion.div>
           )}
 
-          {/* Login Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Username Field */}
-            <div>
-              <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-2">
+          <form onSubmit={handleSubmit} className="space-y-8">
+            <div className="space-y-3">
+              <label htmlFor="username" className="block text-sm font-bold text-slate-300 ml-1">
                 {t('login.username')}
               </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <User className="w-5 h-5 text-gray-400" />
+              <div className="relative group">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <User className="w-5 h-5 text-slate-500 group-focus-within:text-purple-400 transition-colors" />
                 </div>
                 <input
                   id="username"
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className={`w-full pl-10 pr-4 py-3 bg-white border ${
-                    error ? 'border-red-500' : 'border-gray-300'
-                  } rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent`}
+                  className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-2xl text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/50 transition-all font-medium"
                   placeholder={t('login.username_placeholder')}
                   autoComplete="username"
                   dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}
@@ -229,23 +193,20 @@ const Login: React.FC = () => {
               </div>
             </div>
 
-            {/* Password Field */}
-            <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+            <div className="space-y-3">
+              <label htmlFor="password" className="block text-sm font-bold text-slate-300 ml-1">
                 {t('login.password')}
               </label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Lock className="w-5 h-5 text-gray-400" />
+              <div className="relative group">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <Lock className="w-5 h-5 text-slate-500 group-focus-within:text-purple-400 transition-colors" />
                 </div>
                 <input
                   id="password"
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className={`w-full pl-10 pr-4 py-3 bg-white border ${
-                    error ? 'border-red-500' : 'border-gray-300'
-                  } rounded-lg text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent`}
+                  className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-2xl text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/50 transition-all font-medium"
                   placeholder={t('login.password_placeholder')}
                   autoComplete="current-password"
                   dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}
@@ -253,31 +214,39 @@ const Login: React.FC = () => {
               </div>
             </div>
 
-            {/* Submit Button */}
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full py-4 px-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-black rounded-2xl hover:scale-[1.02] active:scale-[0.98] transition-all shadow-xl shadow-purple-900/40 border border-white/10 flex items-center justify-center gap-3 disabled:opacity-50"
             >
               {loading ? (
                 <>
                   <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                  <span>{t('login.logging_in')}</span>
+                  <span className="tracking-widest uppercase text-sm">{t('login.logging_in')}</span>
                 </>
               ) : (
                 <>
-                  <LogIn className="w-5 h-5" />
-                  <span>{t('login.submit')}</span>
+                  <LogIn className="w-5 h-5 flex-shrink-0" />
+                  <span className="tracking-widest uppercase text-sm">{t('login.submit')}</span>
                 </>
               )}
             </button>
           </form>
 
-          {/* Info Message */}
-          <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-            <p className="text-blue-700 text-sm text-center">{t('login.info')}</p>
+          <div className="mt-10 p-5 bg-purple-500/5 border border-purple-500/10 rounded-2xl">
+            <p className="text-slate-400 text-sm text-center font-medium italic leading-relaxed">{t('login.info')}</p>
           </div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="flex items-center justify-center gap-2 text-sm font-bold text-slate-500 mt-8 tracking-widest uppercase"
+        >
+          <Code className="w-4 h-4 text-purple-600" />
+          <span>{t('login.developer')}</span>
+        </motion.div>
       </motion.div>
     </div>
   );

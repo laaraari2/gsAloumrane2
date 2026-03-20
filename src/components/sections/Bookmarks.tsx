@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { Bookmark, Trash2, ExternalLink } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { getBookmarks, removeBookmark, Bookmark as BookmarkType } from '../../lib/storage';
 
 const Bookmarks: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
   const navigate = useNavigate();
   const [bookmarks, setBookmarks] = useState<BookmarkType[]>(getBookmarks());
 

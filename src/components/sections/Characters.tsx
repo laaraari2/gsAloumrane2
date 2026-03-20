@@ -1,59 +1,68 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { User } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
-
-const characterKeys = ['antigone', 'creon', 'ismene', 'hemon', 'choeur', 'gardes', 'nurse', 'messenger', 'eurydice', 'page'];
-
+import { useBook } from '../../hooks/useBook';
 const Characters: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
+  
+  // Get all keys from 'characters' object except 'title' and 'subtitle'
+  const charactersData = t('characters', { returnObjects: true }) as Record<string, any>;
+  const characterKeys = Object.keys(charactersData || {}).filter(
+    key => key !== 'title' && key !== 'subtitle'
+  );
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="max-w-6xl mx-auto"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      className="max-w-7xl mx-auto"
     >
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+      <div className="text-center mb-16">
+        <motion.h2 
+          className="text-4xl md:text-6xl font-black mb-4 text-gradient text-shadow-glow"
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           {t('characters.title')}
-        </h2>
-        <p className="text-slate-400">{t('characters.subtitle')}</p>
+        </motion.h2>
+        <p className="text-slate-400 font-medium tracking-wide uppercase text-sm opacity-80">{t('characters.subtitle')}</p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {characterKeys.map((key, index) => {
           const traits = t(`characters.${key}.traits`, { returnObjects: true }) as string[];
           
           return (
             <motion.div
               key={key}
-              initial={{ y: 50, opacity: 0 }}
+              initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.02, y: -5 }}
-              className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all flex flex-col"
+              transition={{ delay: index * 0.05 }}
+              className="glass card-hover rounded-[2rem] p-8 flex flex-col relative overflow-hidden group"
             >
-              <div className="flex items-start gap-4 mb-4">
-                <div className="bg-purple-500/20 p-3 rounded-full">
-                  <User className="w-6 h-6 text-purple-400" />
+              <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/5 rounded-full blur-2xl group-hover:bg-purple-500/10 transition-colors" />
+              
+              <div className="flex items-center gap-5 mb-6 relative">
+                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 p-4 rounded-2xl border border-white/10 group-hover:scale-110 transition-transform">
+                  <User className="w-8 h-8 text-purple-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold font-serif text-purple-300 mb-1">{t(`characters.${key}.name`)}</h3>
-                  <p className="text-sm text-pink-400">{t(`characters.${key}.role`)}</p>
+                  <h3 className="text-2xl font-black text-white mb-1 group-hover:text-purple-300 transition-colors">{t(`characters.${key}.name`)}</h3>
+                  <p className="text-xs font-bold tracking-widest uppercase text-pink-500 opacity-80">{t(`characters.${key}.role`)}</p>
                 </div>
               </div>
               
-              <p className="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
+              <p className="text-slate-300/90 text-md leading-relaxed mb-8 flex-grow font-medium">
                 {t(`characters.${key}.description`)}
               </p>
               
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 relative">
                 {Array.isArray(traits) && traits.map((trait) => (
                   <span
                     key={trait}
-                    className="px-3 py-1 bg-purple-500/20 text-purple-300 text-xs rounded-full border border-purple-500/30"
+                    className="px-4 py-1.5 glass-dark text-purple-300 text-xs font-bold rounded-lg border border-purple-500/20 group-hover:border-purple-500/40 transition-colors"
                   >
                     {trait}
                   </span>

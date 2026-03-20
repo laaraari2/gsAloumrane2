@@ -2,7 +2,7 @@
   "name": "antigone-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://laaraari2.github.io/antigoneGs",
+  "homepage": "https://laaraari2.github.io/gsAloumrane2",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { useBook } from '../../hooks/useBook';
 import { BookCopy, Users, Waypoints, Milestone } from 'lucide-react';
 import BookmarkButton from '../BookmarkButton';
 
@@ -30,7 +30,7 @@ const InfoRow: React.FC<{ label: string; value: string }> = ({ label, value }) =
 );
 
 const Fiche: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
 
   return (
     <motion.div
@@ -62,20 +62,25 @@ const Fiche: React.FC = () => {
 
         <Section title={t('fiche.characters_section.title')} icon={Users}>
           <ul className="list-disc list-inside text-slate-300 space-y-2 text-sm">
-            <li>{t('fiche.characters_section.antigone')}</li>
-            <li>{t('fiche.characters_section.creon')}</li>
-            <li>{t('fiche.characters_section.ismene')}</li>
-            <li>{t('fiche.characters_section.hemon')}</li>
+            {Object.entries(t('fiche.characters_section', { returnObjects: true }) as Record<string, string>).map(([k, v]) => {
+                if (k === 'title') return null;
+                return <li key={k}>{v}</li>;
+            })}
           </ul>
         </Section>
 
         <Section title={t('fiche.schema.title')} icon={Waypoints}>
           <ul className="list-decimal list-inside text-slate-300 space-y-2 text-sm">
-            <li><strong className="text-purple-300 me-2">{t('fiche.schema.prologue').split(':')[0]}:</strong> {t('fiche.schema.prologue').split(':')[1]}</li>
-            <li><strong className="text-purple-300 me-2">{t('fiche.schema.element').split(':')[0]}:</strong> {t('fiche.schema.element').split(':')[1]}</li>
-            <li><strong className="text-purple-300 me-2">{t('fiche.schema.peripeties').split(':')[0]}:</strong> {t('fiche.schema.peripeties').split(':')[1]}</li>
-            <li><strong className="text-purple-300 me-2">{t('fiche.schema.denouement').split(':')[0]}:</strong> {t('fiche.schema.denouement').split(':')[1]}</li>
-            <li><strong className="text-purple-300 me-2">{t('fiche.schema.final').split(':')[0]}:</strong> {t('fiche.schema.final').split(':')[1]}</li>
+            {['prologue', 'element', 'peripeties', 'denouement', 'final'].map((step) => {
+              const val = t(`fiche.schema.${step}`);
+              if (!val) return null;
+              const [label, ...rest] = val.split(':');
+              return (
+                <li key={step}>
+                  <strong className="text-purple-300 me-2">{label}:</strong> {rest.join(':')}
+                </li>
+              );
+            })}
           </ul>
         </Section>
         

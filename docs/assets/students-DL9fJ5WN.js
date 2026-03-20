@@ -1,1 +1,0 @@
-const s=[{id:1,name:"تلميذ 1",nameFr:"Élève 1",username:"student1",password:"pass123"},{id:2,name:"تلميذ 2",nameFr:"Élève 2",username:"student2",password:"pass123"},{id:3,name:"تلميذ 3",nameFr:"Élève 3",username:"student3",password:"pass123"}];export{s as default};

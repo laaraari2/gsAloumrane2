@@ -1,0 +1,1276 @@
+{
+  "home": {
+    "title": "Synopsis",
+    "p1_part1": "Antigone de Jean Anouilh est une réécriture moderne de la tragédie de Sophocle. Créée en",
+    "p1_part2": "1944",
+    "p1_part3": "à Paris, sous l'Occupation allemande, la pièce acquiert une résonance politique immédiate.",
+    "p2_part1": "L'histoire reste la même : Antigone, fille d'Œdipe, brave l'interdit du roi Créon en offrant une sépulture à son frère Polynice. Mais Anouilh explore le conflit sous un angle",
+    "p2_part2": "existentiel",
+    "p2_part3": ".",
+    "p3_part1": "Ce n'est plus seulement un conflit entre loi divine et loi humaine, mais l'opposition entre",
+    "p3_part2": "l'intransigeance d'une adolescente",
+    "p3_part3": "qui refuse le compromis et le",
+    "p3_part4": "pragmatisme d'un homme politique",
+    "p3_part5": "las, contraint d'assurer l'ordre."
+  },
+  "characters": {
+    "title": "Les Personnages",
+    "subtitle": "Les protagonistes de la tragédie moderne d'Anouilh",
+    "antigone": {
+      "name": "Antigone",
+      "role": "L'héroïne révoltée",
+      "description": "Jeune fille maigre, noiraude et renfermée. Elle incarne la pureté, le refus du compromis et le 'non' absolu face au monde des adultes.",
+      "traits": [
+        "Intransigeante",
+        "Pure",
+        "Rebelle",
+        "Solitaire"
+      ]
+    },
+    "creon": {
+      "name": "Créon",
+      "role": "Le roi désabusé",
+      "description": "Oncle d'Antigone, roi de Thèbes. C'est un homme vieillissant et fatigué qui a accepté le 'sale boulot' de gouverner. Il représente le pragmatisme et le compromis.",
+      "traits": [
+        "Pragmatique",
+        "Fatigué",
+        "Autoritaire",
+        "Solitaire"
+      ]
+    },
+    "ismene": {
+      "name": "Ismène",
+      "role": "La sœur raisonnable",
+      "description": "La belle et blonde sœur d'Antigone. Contrairement à sa sœur, elle choisit la vie, le bonheur simple et la soumission aux règles.",
+      "traits": [
+        "Raisonnable",
+        "Coquette",
+        "Pleine de vie",
+        "Craintive"
+      ]
+    },
+    "hemon": {
+      "name": "Hémon",
+      "role": "Le fiancé amoureux",
+      "description": "Fils de Créon et fiancé d'Antigone. Il est pris entre son amour pour Antigone et son respect pour son père, mais choisit finalement Antigone.",
+      "traits": [
+        "Amoureux",
+        "Jeune",
+        "Idéaliste",
+        "Tragique"
+      ]
+    },
+    "choeur": {
+      "name": "Le Chœur",
+      "role": "Le commentateur",
+      "description": "Un seul personnage qui présente les protagonistes et commente l'action. Il connaît la fin et explique le mécanisme de la tragédie.",
+      "traits": [
+        "Omniscient",
+        "Détaché",
+        "Commentateur",
+        "Fataliste"
+      ]
+    },
+    "gardes": {
+      "name": "Les Gardes",
+      "role": "L'humanité ordinaire",
+      "description": "Représentants du peuple, indifférents à la tragédie. Ils sont préoccupés par leur quotidien, leur salaire et leur grade.",
+      "traits": [
+        "Bruts",
+        "Indifférents",
+        "Ordinaires",
+        "Pragmatiques"
+      ]
+    },
+    "nurse": {
+      "name": "La Nourrice",
+      "role": "La figure maternelle",
+      "description": "Simple et aimante, elle est le dernier lien d'Antigone avec le monde de l'enfance et de l'affection. Elle ne comprend pas le drame qui se joue.",
+      "traits": [
+        "Aimante",
+        "Simple",
+        "Protectrice",
+        "Inquiète"
+      ]
+    },
+    "messenger": {
+      "name": "Le Messager",
+      "role": "Le porteur de mauvaises nouvelles",
+      "description": "Personnage traditionnel de la tragédie grecque, il vient annoncer sobrement les morts qui se sont produites hors de la scène.",
+      "traits": [
+        "Factuel",
+        "Sombre",
+        "Solennel",
+        "Classique"
+      ]
+    },
+    "eurydice": {
+      "name": "Eurydice",
+      "role": "La reine silencieuse",
+      "description": "Femme de Créon. Elle passe toute la pièce à tricoter, un geste symbolique de résignation. Sa mort silencieuse est la réponse ultime à l'échec de Créon.",
+      "traits": [
+        "Silencieuse",
+        "Digne",
+        "Tragique",
+        "Mère endeuillée"
+      ]
+    },
+    "page": {
+      "name": "Le Page",
+      "role": "Le témoin innocent",
+      "description": "Jeune garçon qui accompagne Créon. Il est le seul être qui restera auprès du roi à la fin, symbole de l'innocence qui côtoie le pouvoir.",
+      "traits": [
+        "Innocent",
+        "Jeune",
+        "Témoin",
+        "Fidèle"
+      ]
+    }
+  },
+  "oeuvre": {
+    "title": "L'Œuvre et son Contexte",
+    "subtitle": "Comprendre la pièce au-delà de l'histoire",
+    "creation": {
+      "title": "Contexte de Création",
+      "content": "Écrite en 1942 et jouée pour la première fois en 1944, la pièce est créée dans un Paris occupé par l'Allemagne nazie. Elle reçoit l'imprimatur des censeurs allemands, qui y voient une défense de l'ordre établi (Créon), tandis que le public français y voit une allégorie de la Résistance (Antigone). Cette ambiguïté a fait le succès et la force de la pièce."
+    },
+    "style": {
+      "title": "Structure et Style",
+      "content": "Anouilh rompt avec la structure classique. La pièce est jouée en un seul acte, sans interruption, renforçant la sensation d'une mécanique inéluctable. Le langage est moderne, familier, avec des anachronismes volontaires (gardes qui parlent de leur 'grade', voitures, cigarettes) qui ancrent le mythe antique dans une réalité contemporaine."
+    },
+    "vision": {
+      "title": "La Vision du Tragique",
+      "content": "Pour Anouilh, la tragédie est 'reposante' et 'propre'. Contrairement au drame plein d'espoir et de rebondissements, la tragédie est une machine dont l'issue est connue d'avance. Les personnages ne luttent pas pour changer leur destin, mais pour être fidèles à eux-mêmes jusqu'au bout. C'est une vision fataliste et existentialiste."
+    },
+    "symboles_antigone": {
+      "title": "Symboles de la Pièce",
+      "content": "Le tricot d'Eurydice (la fatalité), la pelle d'enfant (l'acte dérisoire mais sacré), le cigar de Créon (le pouvoir moderne et fatigué), la robe rouge d'Antigone (le désir de vie sacrifié)."
+    }
+  },
+  "themes": {
+    "title": "Les Thèmes",
+    "subtitle": "Les grandes questions philosophiques de Jean Anouilh",
+    "revolte": {
+      "title": "La Révolte et le 'Non'",
+      "description": "Antigone incarne la révolte absolue contre l'ordre établi et les compromis de la vie d'adulte. Son 'non' est un acte existentiel pur."
+    },
+    "bonheur": {
+      "title": "Le Bonheur et le Compromis",
+      "description": "La pièce oppose la conception simple et médiocre du bonheur de Créon à l'exigence de pureté absolue d'Antigone, qui refuse un bonheur fait de petites lâchetés."
+    },
+    "enfance": {
+      "title": "Enfance vs. Monde Adulte",
+      "description": "Antigone s'accroche à l'intransigeance de l'enfance, tandis que Créon représente le monde adulte, fait de responsabilités et de compromissions."
+    },
+    "fatalite": {
+      "title": "La Fatalité et le Tragique",
+      "description": "Le Prologue annonce dès le début que l'histoire est inéluctable. La tragédie est une machine bien huilée qui avance seule vers sa fin."
+    },
+    "solitude": {
+      "title": "La Solitude",
+      "description": "Tous les personnages principaux sont profondément seuls : Antigone dans sa révolte, Créon dans son pouvoir, et Hémon dans son amour impossible."
+    },
+    "politique": {
+      "title": "Le Politique",
+      "description": "La pièce explore la nature du pouvoir. Créon doit maintenir l'ordre à tout prix, même si cela le dégoûte. C'est le 'métier' de roi."
+    }
+  },
+  "quotes": {
+    "title": "Citations Célèbres",
+    "subtitle": "Les répliques qui définissent la pièce d'Anouilh",
+    "q1": {
+      "text": "Moi, je ne veux pas comprendre. Je suis là pour vous dire non et pour mourir.",
+      "speaker": "Antigone",
+      "context": "Face à Créon qui tente de la raisonner, elle affirme son refus total du compromis."
+    },
+    "q2": {
+      "text": "La vie, ce n'est peut-être tout de même que le bonheur.",
+      "speaker": "Créon",
+      "context": "Créon défend sa vision pragmatique et simple de la vie face à l'idéalisme d'Antigone."
+    },
+    "q3": {
+      "text": "C'est reposant, la tragédie, parce qu'on sait qu'il n'y a plus d'espoir, le sale espoir.",
+      "speaker": "Le Chœur",
+      "context": "Le Chœur explique la nature inéluctable et 'propre' de la tragédie, sans les incertitudes du drame."
+    },
+    "q4": {
+      "text": "Pauvre Créon ! Avec mes ongles cassés et pleins de terre et les bleus que tes gardes m'ont faits, avec ma peur qui me tord le ventre, moi je suis reine.",
+      "speaker": "Antigone",
+      "context": "Antigone affirme sa supériorité morale sur Créon, malgré sa condition misérable."
+    },
+    "q5": {
+      "text": "Il faut faire ce que l'on peut.",
+      "speaker": "Ismène",
+      "context": "Ismène exprime sa philosophie de vie, basée sur la prudence et l'acceptation des limites humaines."
+    },
+    "q6": {
+      "text": "Cuisiner, oui, mon petit. Il faut faire la cuisine. Est-ce que tu crois que cela ne me dégoûte pas autant que toi ?",
+      "speaker": "Créon",
+      "context": "Créon compare le 'métier' de roi à une tâche ingrate mais nécessaire, comme faire la cuisine."
+    }
+  },
+  "fiche": {
+    "title": "Fiche de Lecture",
+    "subtitle": "L'essentiel sur Antigone pour l'examen",
+    "identity": {
+      "title": "Identité de l'œuvre",
+      "author": "Auteur",
+      "author_value": "Jean Anouilh",
+      "full_title": "Titre",
+      "full_title_value": "Antigone",
+      "genre": "Genre",
+      "genre_value": "Tragédie moderne",
+      "date": "Date d'écriture",
+      "date_value": "1942",
+      "first_perf": "Première représentation",
+      "first_perf_value": "1944"
+    },
+    "characters_section": {
+      "title": "Personnages Principaux",
+      "antigone": "Antigone : L'héroïne révoltée qui dit 'non'.",
+      "creon": "Créon : Le roi, oncle d'Antigone, qui incarne l'ordre et le pouvoir.",
+      "ismene": "Ismène : Sœur d'Antigone, qui choisit la vie et refuse de désobéir.",
+      "hemon": "Hémon : Fils de Créon et fiancé d'Antigone."
+    },
+    "schema": {
+      "title": "Schéma Narratif",
+      "prologue": "Prologue : Présentation des personnages et de l'intrigue par le Chœur.",
+      "element": "Élément déclencheur : Antigone annonce à Ismène qu'elle a bravé l'interdit et enterré Polynice.",
+      "peripeties": "Péripéties : Arrestation d'Antigone, long débat avec Créon, tentative de sauvetage par Hémon.",
+      "denouement": "Dénouement : Antigone est condamnée. Elle se pend, Hémon se tue à ses côtés, et Eurydice, la reine, se suicide en apprenant la mort de son fils.",
+      "final": "Situation finale : Créon reste seul dans son palais désert, attendant son heure."
+    }
+  },
+  "quiz_rapide": {
+    "title": "Quiz Rapide",
+    "subtitle": "Testez vos connaissances sur Antigone",
+    "start_button": "Commencer le quiz",
+    "next_button": "Question suivante",
+    "restart_button": "Recommencer",
+    "score_text": "Votre score",
+    "final_message_good": "Excellent ! Vous maîtrisez parfaitement l'œuvre.",
+    "final_message_medium": "Pas mal, mais une relecture ne ferait pas de mal.",
+    "final_message_bad": "Il est temps de réviser vos fiches !",
+    "questions": [
+      {
+        "question": "En quelle année la pièce 'Antigone' a-t-elle été jouée pour la première fois ?",
+        "options": ["1939", "1942", "1944", "1946"],
+        "correctAnswer": "1944",
+        "explanation": "La pièce a été écrite in 1942 mais jouée pour la première fois en 1944."
+      },
+      {
+        "question": "Qui reste seul avec Créon à la toute fin de la pièce ?",
+        "options": [
+          "Le Chœur",
+          "Son Page",
+          "Ismène",
+          "Un garde"
+        ],
+        "correctAnswer": "Son Page",
+        "explanation": "Après les suicides en chaîne, Créon reste seul avec son jeune page, symbole de sa solitude absolue dans le pouvoir."
+      }
+    ]
+  },
+  "ecrits": {
+    "title": "Écrits d'élèves",
+    "subtitle": "Un espace pour partager vos créations et réflexions sur l'œuvre.",
+    "form_title": "Partagez votre travail",
+    "name_label": "Votre nom",
+    "title_label": "Titre de votre contribution",
+    "content_label": "Votre texte",
+    "submit_button": "Soumettre",
+    "db_required_title": "Fonctionnalité en attente",
+    "db_required_text": "La soumission de textes est désactivée. Pour activer cette fonctionnalité, une base de données est nécessaire. Pensez à connecter un projet Supabase !",
+    "submissions_title": "Contributions récentes",
+    "mock_submissions": [
+      {
+        "name": "Leila B.",
+        "title": "Une fin pour Ismène",
+        "content": "Et si Ismène, après la mort de tous, avait décidé de reprendre le flambeau de sa sœur ? Non pas par un acte de défi public, mais en créant secrètement un lieu de mémoire pour tous les oubliés de Thèbes, transformant sa peur en une force silencieuse."
+      },
+      {
+        "name": "Youssef A.",
+        "title": "Le vrai pouvoir selon Créon",
+        "content": "Je pense que Créon n'est pas juste un tyran. Il est l'incarnation tragique de la responsabilité. Sa discussion avec Antigone montre un homme qui a sacrifié son propre bonheur pour un ordre qu'il sait fragile. Sa solitude finale est la preuve que le pouvoir absolu est une prison."
+      }
+    ]
+  },
+  "audio": {
+    "title": "Version Audio",
+    "subtitle": "Écoutez des extraits clés de la pièce pour une immersion complète.",
+    "placeholder_title": "Lecteurs audio prêts !",
+    "placeholder_text": "Les lecteurs sont maintenant actifs avec un clip silencieux. Pour ajouter les vrais dialogues, vous devrez fournir les fichiers audio MP3.",
+    "speaker_label": "Lu par :",
+    "clips": [
+      {
+        "title": "Scène 1 : Le Prologue",
+        "speaker": "Le Chœur",
+        "description": "Le Chœur présente tous les personnages qui vont jouer leur rôle jusqu'au bout, et nous explique que le mécanisme de la tragédie est déjà en marche.",
+        "src": "audio/prologue.mp3"
+      },
+      {
+        "title": "Scène 2 : Le face-à-face",
+        "speaker": "Antigone & Créon",
+        "description": "Le débat central de la pièce, où s'opposent deux visions du monde : le refus absolu d'Antigone et le pragmatisme politique de Créon.",
+        "src": "audio/SCÈNE 2 — Antigone et la Nourrice.mp3"
+      },
+      {
+        "title": "Scène 3 : Les adieux d'Hémon",
+        "speaker": "Hémon & Créon",
+        "description": "Hémon supplie son père d'épargner Antigone, mais face au refus de Créon, il lui annonce qu'il ne le reverra plus jamais.",
+        "src": "audio/SCÈNE 3 — Antigone et Ismène.mp3"
+      }
+    ]
+  },
+  "examen": {
+    "title": "Mode Examen",
+    "subtitle": "Préparez-vous avec des questions de type examen régional.",
+    "comprehension_title": "I. Questions de compréhension",
+    "analysis_title": "II. Analyse de texte",
+    "writing_title": "III. Production écrite",
+    "writing_placeholder": "Rédigez votre réponse ici...",
+    "show_answer_points": "Voir les points de réponse",
+    "show_analysis_points": "Voir les points clés de l'analyse",
+    "show_writing_points": "Voir les pistes de correction",
+    "comprehension_questions": [
+      {
+        "question": "Dans quel contexte historique la pièce Antigone d'Anouilh a-t-elle été écrite et jouée ?",
+        "points": [
+          "Écrite en 1942",
+          "Jouée pour la première fois en 1944 à Paris",
+          "Sous l'Occupation allemande",
+          "Acquiert une résonance politique immédiate"
+        ]
+      },
+      {
+        "question": "Quelle est la fonction principale du Chœur dans la pièce d'Anouilh ?",
+        "points": [
+          "Présenter les personnages dans le Prologue",
+          "Expliquer le mécanisme de la tragédie",
+          "Annoncer la fin d'avance",
+          "Commenter l'action"
+        ]
+      },
+      {
+        "question": "En quoi Créon chez Anouilh diffère-t-il de Créon chez Sophocle ?",
+        "points": [
+          "Chez Anouilh : homme las, contraint de gouverner",
+          "Chez Sophocle : tyran intransigeant",
+          "Chez Anouilh : représente le pragmatisme et le compromis",
+          "Chez Sophocle : représente le pouvoir absolu"
+        ]
+      },
+      {
+        "question": "[Examen Régional] Identifiez l'œuvre : Quel est son auteur, son genre et son siècle ?",
+        "points": [
+          "Auteur : Jean Anouilh",
+          "Genre : Tragédie moderne",
+          "Siècle : 20ème siècle"
+        ]
+      },
+      {
+        "question": "[Examen Régional] Situation du passage : Où se situe cet affrontement entre Créon et Antigone dans la progression de l'œuvre ?",
+        "points": [
+          "Il se situe juste après l'arrestation d'Antigone par les gardes.",
+          "C'est le moment crucial où la confrontation devient inévitable.",
+          "Antigone a été prise en flagrant délit de tentative d'enterrement de son frère."
+        ]
+      },
+      {
+        "question": "[Examen Régional] Quelle est la différence majeure entre l'attitude d'Antigone et celle d'Ismène face au décret de Créon ?",
+        "points": [
+          "Antigone : Choisit la révolte et la fidélité au devoir fraternel malgré la mort.",
+          "Ismène : Choisit l'obéissance par peur du pouvoir et de la souffrance.",
+          "L'une représente l'idéalisme tragique, l'autre le pragmatisme vital."
+        ]
+      },
+      {
+        "question": "[Examen Régional] Relevez trois indices dans le texte montrant que la pièce s'inscrit dans la modernité.",
+        "points": [
+          "Les anachronismes (cigarettes, gardes qui parlent de prime).",
+          "Le niveau de langue parfois familier.",
+          "L'absence de découpage en scènes et actes traditionnels."
+        ]
+      }
+    ],
+    "analysis_questions": [
+      {
+        "quote": "Comprendre... Vous n'avez que ce mot-là dans la bouche, tous, depuis que je suis toute petite. Il fallait comprendre qu'on ne peut pas toucher à l'eau, à la belle et fuyante eau froide parce que cela mouille les dalles...",
+        "question": "Analysez cette réplique d'Antigone. Que révèle-t-elle sur sa personnalité et sa vision du monde ?",
+        "points": [
+          "Refus du monde adulte et de ses règles jugées absurdes.",
+          "Association de la liberté à des sensations pures et enfantines (l'eau froide).",
+          "Le mot 'comprendre' est perçu comme un synonyme de 'se soumettre'.",
+          "Montre son intransigeance et son désir d'absolu, en opposition au compromis."
+        ]
+      },
+      {
+        "quote": "C'est reposant, la tragédie, parce qu'on sait qu'il n'y a plus d'espoir, le sale espoir.",
+        "question": "Analysez cette réplique du Chœur. Quelle est la vision d'Anouilh de la tragédie ?",
+        "points": [
+          "La tragédie est 'reposante' car son issue est connue d'avance",
+          "La tragedy est 'propre', libre de l'espoir et des rebondissements",
+          "La différence entre tragédie et drame",
+          "La fatalité : les personnages ne peuvent changer leur destin"
+        ]
+      },
+      {
+        "quote": "La vie, ce n'est peut-être tout de même que le bonheur.",
+        "question": "Analysez cette réplique de Créon. Quelle est sa vision de la vie ? Comment s'oppose-t-elle à celle d'Antigone ?",
+        "points": [
+          "Vision pragmatique de Créon : le bonheur simple",
+          "Acceptation des compromis et accommodements",
+          "Opposition à l'idéalisme d'Antigone",
+          "Conflit entre pragmatisme et idéalisme"
+        ]
+      },
+      {
+        "quote": "Moi, je ne veux pas comprendre. Je suis là pour vous dire non et pour mourir.",
+        "question": "Analysez cette réplique d'Antigone. Quelles sont ses implications philosophiques et existentielles ?",
+        "points": [
+          "Le refus absolu : 'non' comme mot-clé d'Antigone",
+          "Refuser de comprendre = refuser de se soumettre",
+          "Acceptation de la mort comme choix et non comme punition",
+          "Dimension existentielle : conflit entre pureté et compromis"
+        ]
+      },
+      {
+        "quote": "Il faut faire ce que l'on peut.",
+        "question": "Analysez cette réplique d'Ismène. Quelle est sa philosophie de vie ?",
+        "points": [
+          "Philosophie d'Ismène : prudence et acceptation des limites",
+          "Choix de la vie et du bonheur simple",
+          "Soumission aux règles",
+          "Opposition à la position d'Antigone"
+        ]
+      },
+      {
+        "quote": "[Examen Régional] 'Le jardin dormait encore'.",
+        "question": "Identifiez la figure de style contenue dans cette phrase et expliquez-en l'effet recherché.",
+        "points": [
+          "Figure de style : Personnification",
+          "Effet : Souligner le calme absolu et l'atmosphère paisible du petit matin, contrastant avec le drame imminent."
+        ]
+      },
+      {
+        "quote": "'Regardez-moi, Créon. Regardez-moi. C'est vous qui portez ces forces-là, et ces visages, et ces polices...'",
+        "question": "Quelle est la tonalité dominale dans ce discours d'Antigone ? Quel est son but ?",
+        "points": [
+          "Tonalité : Polémique",
+          "But : Attaquer l'autorité de Créon et la dépouiller de sa légitimité morale.",
+          "Mettre en évidence le conflit direct entre l'individu et l'État."
+        ]
+      },
+      {
+        "quote": "'Cela roule.. La tragédie est une machine qui travaille depuis toujours. Elle est bien huilée!'",
+        "question": "Expliquez la métaphore de la 'machine' utilisée par le Chœur pour décrire la tragédie.",
+        "points": [
+          "Comparant : La machine mécanique bien huilée.",
+          "Comparé : La tragédie et le destin inéluctable.",
+          "Sens : Une fois lancée, rien ne peut plus l'arrêter; l'espoir n'existe plus."
+        ]
+      }
+    ],
+    "writing_prompts": [
+      {
+        "prompt": "Sujet : Certains pensent qu'Antigone est une héroïne admirable, tandis que d'autres estiment que son attitude est immature et irresponsable. Partagez-vous l'un de ces points de vue ? Développez votre argumentation en vous appuyant sur des exemples précis de la pièce.",
+        "points": [
+          "Introduction : Présenter la dualité du personnage d'Antigone et la problématique.",
+          "Thèse (ex: Antigone, héroïne de l'absolu) : Argumenter sur son courage, sa fidélité à ses principes, son rôle de résistante.",
+          "Antithèse (ex: Une révolte stérile) : Argumenter sur son jusqu'au-boutisme, son refus du dialogue, les conséquences tragiques de son acte pour ses proches (Hémon, Eurydice).",
+          "Synthèse : Nuancer le jugement. Antigone est peut-être les deux à la fois. Son geste est nécessaire pour réveiller les consciences, même s'il est tragiquement individuel.",
+          "Conclusion : Ouvrir sur la portée universelle du personnage (symbole de la résistance contre l'injustice)."
+        ]
+      },
+      {
+        "prompt": "Sujet : 'C'est reposant, la tragédie, parce qu'on sait qu'il n'y a plus d'espoir.' Quelle est la vision d'Anouilh de la tragédie ? Quelles sont ses caractéristiques dans la pièce Antigone ?",
+        "points": [
+          "Introduction : Présenter la vision d'Anouilh de la tragédie.",
+          "La tragédie 'reposante' et 'propre' : l'issue est connue d'avance.",
+          "La différence entre tragédie et drame.",
+          "La fatalité : les personnages ne luttent pas pour changer leur destin mais pour être fidèles à eux-mêmes.",
+          "La structure : un seul acte, mécanique inéluctable, le Chœur annonce la fin.",
+          "Conclusion : Vision existentielle et fataliste de la tragédie."
+        ]
+      },
+      {
+        "prompt": "Sujet : Comparez le personnage de Créon chez Sophocle et chez Anouilh. Quelles sont les transformations qu'Anouilh a apportées à ce personnage ?",
+        "points": [
+          "Introduction : Présenter le personnage dans les deux versions.",
+          "Créon chez Sophocle : tyran intransigeant, représente le pouvoir absolu.",
+          "Créon chez Anouilh : homme las, contraint de gouverner, représente le pragmatisme.",
+          "Les transformations : de la tyrannie au pragmatisme, de la cruauté à la lassitude, du pouvoir absolu à la responsabilité accablante.",
+          "La vision philosophique : chez Anouilh, le pouvoir est un 'métier' ingrat et non un privilège.",
+          "Conclusion : La transformation du personnage reflète la vision existentialiste d'Anouilh."
+        ]
+      },
+      {
+        "prompt": "Sujet : 'Moi, je ne veux pas comprendre. Je suis là pour vous dire non et pour mourir.' Quelles sont les significations du refus d'Antigone ? Quelle est la dimension existentielle de ce refus ?",
+        "points": [
+          "Introduction : Présenter le 'refus' comme thème central de la pièce.",
+          "Le refus absolu : 'non' comme mot-clé d'Antigone.",
+          "Refuser de comprendre = refuser de se soumettre et de compromettre.",
+          "La dimension existentielle : conflit entre pureté et compromis, entre adolescence et monde adulte.",
+          "L'acceptation de la mort : la mort n'est pas une punition mais un choix, affirmation du refus.",
+          "Conclusion : Le refus comme acte existentiel pur."
+        ]
+      },
+      {
+        "prompt": "Sujet : Quelle est la fonction des anachronismes dans la pièce d'Anouilh ? Quel est leur rôle dans l'ancrage du mythe dans la réalité contemporaine ?",
+        "points": [
+          "Introduction : Présenter les anachronismes dans la pièce.",
+          "Exemples : les gardes parlent de leur 'grade', voitures, cigarettes.",
+          "La fonction : ancrer le mythe dans la réalité contemporaine.",
+          "L'effet : rendre la tragédie proche du lecteur contemporain.",
+          "La symbolique : lier le passé au présent, le mythe à la réalité.",
+          "Conclusion : Les anachronismes comme outil de modernisation de la tragédie."
+        ]
+      }
+    ]
+  },
+  "exam_simulator": {
+    "title": "Simulateur d'Examen Régional",
+    "subtitle": "Testez-vous dans des conditions réelles. Vous avez 15 minutes.",
+    "questions": [
+      {
+        "id": 1,
+        "type": "comprehension",
+        "text": "Qui a arrêté Antigone alors qu'elle tentait d'enterrer son frère ?",
+        "modelAnswer": [
+          "Les trois gardes",
+          "Les gardes"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "analysis",
+        "quote": "C'est reposant, la tragédie.",
+        "text": "Pourquoi le Chœur dit-il que la tragédie est reposante, contrairement au drame ?",
+        "modelAnswer": [
+          "Parce que le destin est connu d'avance",
+          "Parce qu'il n'y a plus d'espoir",
+          "La fatalité est inéluctable"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "comprehension",
+        "text": "Qu'a tenté de faire Antigone pour son frère Polynice ?",
+        "modelAnswer": [
+          "L'enterrer",
+          "Lui donner une sépulture",
+          "Recouvrir son cadavre de terre"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "analysis",
+        "quote": "Comprendre... Vous n'avez que ce mot-là dans la bouche.",
+        "text": "Selon ce passage, que représente le verbe « comprendre » pour Antigone ?",
+        "modelAnswer": [
+          "Faire des compromis",
+          "Se soumettre aux règles des adultes",
+          "Renoncer à ses idéaux"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "comprehension",
+        "text": "Quelle est l'arme utilisée par Hémon pour se suicider ?",
+        "modelAnswer": [
+          "Son épée",
+          "Une épée"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "analysis",
+        "text": "Pourquoi Antigone utilise-t-elle une petite pelle d'enfant pour enterrer son frère ?",
+        "modelAnswer": [
+          "Parce que c'est la pelle de Polynice",
+          "Un symbole de l'enfance",
+          "Elle l'a gardée en souvenir"
+        ]
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Comparaison : Antigone de Sophocle vs Anouilh",
+    "subtitle": "Comprendre les différences et transformations entre les deux versions",
+    "intro": "L'Antigone d'Anouilh n'est pas une simple traduction moderne, mais une réécriture radicale de la tragédie classique. Cette comparaison vous aide à comprendre les transformations qu'Anouilh a apportées au texte original.",
+    "sophocle": "Sophocle",
+    "anouilh": "Jean Anouilh",
+    "characters": {
+      "title": "Les Personnages",
+      "sophocle": [
+        "Antigone : Héroïne de principe, défend la loi divine",
+        "Créon : Tyran intransigeant, représente le pouvoir absolu",
+        "Ismène : Peureuse et obéissante, refuse la révolte",
+        "Hémon : Raisonnable et équilibré, tente de médier",
+        "Le Chœur : Groupe d'anciens, donne des conseils"
+      ],
+      "anouilh": [
+        "Antigone : Adolescente rebelle, refuse le monde des adultes",
+        "Créon : Homme las, contraint de gouverner",
+        "Ismène : Choisit le bonheur simple et la vie",
+        "Hémon : Amoureux idéaliste, choisit Antigone",
+        "Le Chœur : Un seul personnage, explique le mécanisme de la tragédie"
+      ]
+    },
+    "style": {
+      "title": "Le Style et la Langue",
+      "sophocle": [
+        "Langue poétique élevée",
+        "Dialogues longs et réfléchis",
+        "Utilisation de la rhétorique classique",
+        "Rythme théâtral traditionnel"
+      ],
+      "anouilh": [
+        "Langue moderne et familière",
+        "Dialogues rapides et vivants",
+        "Anachronismes volontaires (voitures, cigarettes)",
+        "Rythme rapide, un seul acte sans interruption"
+      ]
+    },
+    "vision": {
+      "title": "La Vision Philosophique",
+      "sophocle": [
+        "Conflit entre loi divine et loi humaine",
+        "Dimension religieuse et morale forte",
+        "La justice divine triomphe à la fin",
+        "Leçons morales claires"
+      ],
+      "anouilh": [
+        "Conflit existentiel : l'adolescence contre le monde adulte",
+        "Pas de dimension religieuse claire",
+        "Fatalité inéluctable, pas d'espoir de changement",
+        "Pas de leçons morales, juste l'acceptation du destin"
+      ]
+    },
+    "structure": {
+      "title": "La Structure Dramatique",
+      "sophocle": [
+        "Plusieurs actes avec interruptions",
+        "Interventions du chœur entre les actes",
+        "Structure classique traditionnelle",
+        "Développement progressif des événements"
+      ],
+      "anouilh": [
+        "Un seul acte sans interruption",
+        "Le chœur annonce la fin dès le début",
+        "Structure moderne, mécanique inéluctable",
+        "Sensation de fatalité dès le début"
+      ]
+    },
+    "themes": {
+      "title": "Les Thèmes Principaux",
+      "sophocle": [
+        "Conflit entre religion et politique",
+        "Justice et injustice",
+        "Devoir moral",
+        "Châtiment divin"
+      ],
+      "anouilh": [
+        "Révolte contre le compromis",
+        "Enfance contre monde adulte",
+        "Solitude et existence",
+        "Fatalité et tragique"
+      ]
+    }
+  },
+  "glossary": {
+    "title": "Glossaire des Termes Littéraires",
+    "subtitle": "Comprendre les termes essentiels de la pièce",
+    "search_placeholder": "Rechercher un terme...",
+    "example": "Exemple",
+    "no_results": "Aucun résultat trouvé",
+    "terms": [
+      {
+        "term": "Tragédie",
+        "definition": "Genre littéraire dramatique qui présente un conflit inéluctable menant à une fin tragique. Caractérisée par des personnages nobles et un destin inévitable.",
+        "example": "Antigone est une tragédie car sa fin est connue d'avance et tragique."
+      },
+      {
+        "term": "Prologue",
+        "definition": "Introduction dramatique qui présente les personnages et l'intrigue. Dans Antigone d'Anouilh, le prologue annonce la fin d'avance.",
+        "example": "Le Chœur dans le prologue présente tous les personnages et annonce que la tragédie a commencé."
+      },
+      {
+        "term": "Chœur",
+        "definition": "Dans le théâtre grec : groupe d'acteurs qui commente l'action. Chez Anouilh : un seul personnage qui explique le mécanisme de la tragédie.",
+        "example": "Le Chœur dans Antigone dit : 'C'est reposant, la tragédie, parce qu'on sait qu'il n'y a plus d'espoir.'"
+      },
+      {
+        "term": "Existentiel",
+        "definition": "Ce qui concerne l'existence humaine et ses choix. Anouilh traite le conflit d'un point de vue existentiel et non religieux.",
+        "example": "Le refus d'Antigone est un acte existentiel pur, refus des compromis et des accommodements."
+      },
+      {
+        "term": "Anachronisme",
+        "definition": "Insertion d'éléments d'une époque différente dans une œuvre historique. Anouilh utilise des anachronismes volontaires pour ancrer le mythe dans la réalité contemporaine.",
+        "example": "Les gardes parlent de leur 'grade' et de voitures, bien que l'histoire se déroule dans la Thèbes antique."
+      },
+      {
+        "term": "Drame",
+        "definition": "Genre dramatique plein d'espoir et de rebondissements. Anouilh distingue la tragédie du drame : la tragédie est 'propre' et 'reposante' car son issue est connue.",
+        "example": "Le Chœur dit que la tragédie est meilleure que le drame car elle est libre de 'l'espoir sale'."
+      },
+      {
+        "term": "Fatalité",
+        "definition": "Force inéluctable qui détermine le destin des personnages. Dans Antigone d'Anouilh, la fatalité est inévitable.",
+        "example": "Le Chœur annonce dès le début que l'histoire est inéluctable et que les personnages ne peuvent changer leur destin."
+      },
+      {
+        "term": "Le Non",
+        "definition": "Mot-clé d'Antigone. Refus absolu des compromis et du monde des adultes. Acte existentiel pur.",
+        "example": "Antigone dit : 'Moi, je ne veux pas comprendre. Je suis là pour vous dire non et pour mourir.'"
+      }
+    ]
+  },
+  "mindmaps": {
+    "title": "Schémas et Cartes Mentales",
+    "subtitle": "Révision rapide et organisée de la pièce",
+    "maps": [
+      {
+        "title": "Carte des Personnages",
+        "description": "Relations entre les personnages principaux de la pièce",
+        "icon": "characters",
+        "items": [
+          "Antigone ← sœur d'Ismène, fiancée d'Hémon, fille d'Œdipe",
+          "Créon ← oncle d'Antigone, père d'Hémon, roi de Thèbes",
+          "Hémon ← fils de Créon, fiancé d'Antigone",
+          "Ismène ← sœur d'Antigone, refuse la révolte",
+          "Eurydice ← femme de Créon, mère d'Hémon"
+        ]
+      },
+      {
+        "title": "Carte des Thèmes",
+        "description": "Thèmes philosophiques principaux de la pièce",
+        "icon": "themes",
+        "items": [
+          "Révolte et refus ← Antigone",
+          "Bonheur et compromis ← Créon et Ismène",
+          "Enfance vs monde adulte",
+          "Fatalité et tragique",
+          "Solitude",
+          "Politique et pouvoir"
+        ]
+      },
+      {
+        "title": "Carte des Événements",
+        "description": "Chronologie des événements principaux",
+        "icon": "structure",
+        "items": [
+          "Prologue : présentation des personnages",
+          "Antigone enterre Polynice",
+          "Arrestation d'Antigone",
+          "Débat avec Créon",
+          "Hémon part",
+          "Mort d'Antigone et d'Hémon",
+          "Suicide d'Eurydice",
+          "Créon seul"
+        ]
+      }
+    ]
+  },
+  "howto": {
+    "title": "Comment Répondre",
+    "subtitle": "Guide étape par étape pour répondre aux questions d'examen",
+    "analysis": {
+      "title": "Analyse de Texte (Compréhension)",
+      "steps": [
+        {
+          "step": "Situez le passage",
+          "description": "Cette question demande de la précision. Ne vous contentez pas d'événements vagues. Précisez ce qui s'est passé juste avant.",
+          "tips": [
+            "Utilisez des expressions comme : 'Ce passage fait suite à...' ou 'Cette scène se situe juste après...'",
+            "Identifiez l'événement déclencheur de la confrontation",
+            "Mentionnez les personnages en présence"
+          ]
+        },
+        {
+          "step": "Identifier les figures de style",
+          "description": "On vous demandera souvent d'extraire une figure de style et d'en expliquer l'effet.",
+          "tips": [
+            "Maîtrisez la 'Personnification', la 'Métaphore' et l''Hyperbole'",
+            "Analysez le type de phrases (interrogatives, exclamatives) et leur valeur expressive",
+            "Identifiez la tonalité dominante (tragique, polémique ou ironique)"
+          ]
+        },
+        {
+          "step": "La question de réaction (Opinion)",
+          "description": "La dernière question d'analyse demande votre avis. Le secret réside dans la justification logique.",
+          "tips": [
+            "Commencez par : 'À mon avis', 'Selon moi' ou 'Personnellement'",
+            "Apportez au moins un argument logique",
+            "Ne répondez pas seulement par oui ou par non; la justification est primordiale"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "q": "Question de situation: 'Situez le passage dans l'œuvre.'",
+          "a": "Ce texte se situe juste après la dispute d'Antigone avec sa sœur Ismène. Antigone a déjà pris la décision ferme d'enterrer son frère Polynice malgré l'interdiction de Créon.",
+          "note": "On cite l'événement immédiatement précédent et l'enjeu actuel."
+        },
+        {
+          "q": "Question d'opinion: 'Partagez-vous l'obstination d'Antigone ?'",
+          "a": "À mon avis, l'obstination d'Antigone est héroïque car elle défend ses valeurs familiales au détriment de sa vie, montrant ainsi un courage exceptionnel.",
+          "note": "Connecteur logique + argument moral clair."
+        },
+        {
+          "q": "Identification des figures de style: 'Identifiez la figure dans : (Le jardin dormait encore) et précisez son effet.'",
+          "a": "Figure : Personnification. Effet : Donner vie au jardin pour accentuer le calme absolu et l'aspect paisible du petit matin.",
+          "note": "Mentionnez toujours le type de figure et son impact sur le sens global."
+        }
+      ]
+    },
+    "writing": {
+      "title": "Production Écrite",
+      "steps": [
+        {
+          "step": "Analyser le sujet",
+          "description": "Lisez le sujet deux fois. Identifiez la consigne (argumentation) et les mots-clés.",
+          "tips": [
+            "Déterminez si le sujet demande un plan dialectique (thèse/antithèse) ou analytique",
+            "Soulignez les mots qui définissent la tâche (Êtes-vous d'accord ? Discutez...)"
+          ]
+        },
+        {
+          "step": "Le développement",
+          "description": "Utilisez des connecteurs logiques clairs (D'abord, Ensuite, Enfin, En revanche).",
+          "tips": [
+            "Présentez 3 arguments solides avec des exemples de l'œuvre ou de la réalité",
+            "Maintenez une cohérence entre les idées et évitez les répétitions"
+          ]
+        }
+      ],
+      "examples": [
+        {
+          "q": "Sujet : 'Faut-il accorder une liberté totale aux jeunes ?'",
+          "a": "Introduction (Présentation) -> Développement (Arguments pour: autonomie / Arguments contre: besoin de protection) -> Conclusion (Synthèse: liberté surveillée).",
+          "note": "Structure type d'un plan dialectique équilibré."
+        }
+      ]
+    },
+    "strategic": {
+      "title": "Conseils Stratégiques",
+      "steps": [
+        {
+          "step": "Gestion du temps",
+          "description": "Répartissez votre temps intelligemment entre l'analyse et la production écrite.",
+          "tips": [
+            "45 minutes pour les questions de texte",
+            "1h15 pour la rédaction et la révision"
+          ]
+        },
+        {
+          "step": "Présentation de la copie",
+          "description": "La clarté de l'écriture et l'organisation en paragraphes influencent positivement le correcteur.",
+          "tips": [
+            "Laissez un alinéa au début de chaque paragraphe",
+            "Utilisez correctement la ponctuation pour fluidifier la lecture"
+          ]
+        }
+      ]
+    },
+    "text_analysis": {
+      "title": "Comment analyser un texte de manière organisée",
+      "steps": [
+        {
+          "step": "Lecture attentive et repérage",
+          "description": "Lisez le texte several fois. Repérez les mots-clés, les champs lexicaux, les figures de style, les temps verbaux.",
+          "tips": [
+            "Soulignez les éléments importants",
+            "Notez vos premières impressions",
+            "Identifiez le thème principal"
+          ]
+        },
+        {
+          "step": "Analyse organisée",
+          "description": "Analysez le texte de manière organisée : structure, langue, personnages, thèmes. Utilisez des exemples précis du texte.",
+          "tips": [
+            "Commencez par la structure (dialogue, répétition, progression)",
+            "Analysez la langue (niveau, images, symboles)",
+            "Liez aux personnages et aux thèmes"
+          ]
+        },
+        {
+          "step": "Synthèse et conclusion",
+          "description": "Rassemblez les éléments d'analyse pour offrir une lecture complète du texte. Quel est le message ou la vision présentée ?",
+          "tips": [
+            "Ne répétez pas ce que vous avez dit dans l'analyse",
+            "Offrez une vision complète",
+            "Liez à la pièce dans son ensemble"
+          ]
+        }
+      ]
+    },
+    "writing_composition": {
+      "title": "Comment rédiger un sujet de composition",
+      "steps": [
+        {
+          "step": "Comprendre le sujet",
+          "description": "Lisez le sujet plusieurs fois, identifiez ce qui est demandé (analyse, argumentation, synthèse), identifiez les mots-clés.",
+          "tips": [
+            "Identifiez le type de sujet (argumentation, analyse, synthèse)",
+            "Identifiez les mots-clés",
+            "Assurez-vous de comprendre ce qui est demandé"
+          ]
+        },
+        {
+          "step": "Construire le plan",
+          "description": "Créez un plan organisé : introduction, thèse, antithèse, synthèse, conclusion. Identifiez les arguments et exemples pour chaque partie.",
+          "tips": [
+            "Consacrez suffisamment de temps au plan",
+            "Utilisez des exemples précis de la pièce",
+            "Assurez-vous de la cohérence entre les parties"
+          ]
+        },
+        {
+          "step": "Rédiger l'introduction",
+          "description": "Présentez le sujet, identifiez la problématique, annoncez le plan. Rendez-la attrayante et claire.",
+          "tips": [
+            "Commencez par une phrase accrocheuse",
+            "Identifiez clairement la problématique",
+            "Annoncez votre plan"
+          ]
+        },
+        {
+          "step": "Développer les arguments",
+          "description": "Développez chaque argument avec des exemples précis de la pièce. Utilisez les citations correctement. Liez les arguments entre eux.",
+          "tips": [
+            "Utilisez des exemples précis",
+            "Citez correctement",
+            "Lieez les arguments entre eux"
+          ]
+        },
+        {
+          "step": "La conclusion",
+          "description": "Résumez vos arguments, offrez une réponse à la problématique, ouvrez sur une dimension plus large (dimension universelle, actualité).",
+          "tips": [
+            "N'introduisez pas de nouveaux arguments",
+            "Résumez clairement",
+            "Ouvrez sur une dimension plus large"
+          ]
+        }
+      ]
+    }
+  },
+  "sample_answers": {
+    "title": "Modèles de Réponses Complètes",
+    "subtitle": "Réponses modèles aux questions d'examen avec points de correction",
+    "types": {
+      "analysis": "Analyse de texte",
+      "writing": "Sujet de composition"
+    },
+    "model_answer": "Réponse modèle",
+    "key_points": "Points clés",
+    "answers": [
+      {
+        "type": "analysis",
+        "question": "Analysez cette réplique d'Antigone : 'Moi, je ne veux pas comprendre. Je suis là pour vous dire non et pour mourir.'",
+        "grade": "18/20",
+        "answer": "Cette réplique résume l'essence du personnage d'Antigone et sa vision du monde dans la pièce de Jean Anouilh.\n\nPremièrement, le refus de comprendre : Antigone refuse la 'compréhension' qui signifie pour elle la soumission et le compromis. Elle refuse la logique des adultes qui justifie les compromissions au nom de la sagesse.\n\nDeuxièmement, le refus absolu : 'Non' est le mot-clé d'Antigone. C'est un refus existentiel pur, refus du monde que propose Créon (bonheur simple, compromis).\n\nTroisièmement, l'acceptation de la mort : Antigone accepte la mort comme partie de son refus. La mort n'est pas une punition mais un choix, affirmation de son refus absolu.\n\nCette réplique exprime la vision existentialiste d'Anouilh : le conflit n'est pas entre le bien et le mal, mais entre la pureté et le compromis, entre l'adolescence et le monde adulte.",
+        "points": [
+          "Lien with the personnage d'Antigone",
+          "Analyse du refus de 'comprendre'",
+          "Analyse du refus absolu",
+          "Analyse de l'acceptation de la mort",
+          "Lien avec la vision existentialiste d'Anouilh"
+        ]
+      },
+      {
+        "type": "writing",
+        "question": "Certains pensent qu'Antigone est une héroïne admirable, tandis que d'autres estiment que son attitude est immature. Qu'en pensez-vous ?",
+        "grade": "17/20",
+        "answer": "Le personnage d'Antigone suscite un débat profond entre ceux qui voient en elle une héroïne de l'absolu et ceux qui voient une révolte stérile.\n\nThèse : Antigone, héroïne de l'absolu. Son courage face au pouvoir, sa fidélité à ses principes jusqu'à la mort, son rôle de symbole de résistance contre l'injustice - tout cela en fait un personnage admirable. Son refus des compromis est une affirmation de la pureté morale.\n\nAntithèse : Mais son attitude peut être vue comme une immaturité. Son refus du dialogue, son jusqu'au-boutisme, les conséquences tragiques de son acte (mort d'Hémon et d'Eurydice) - tout cela soulève la question de sa responsabilité.\n\nSynthèse : Antigone est les deux à la fois. Son geste est nécessaire pour réveiller les consciences, mais il est tragiquement individuel. Elle incarne le conflit entre l'idéalisme et la réalité, entre la pureté et le compromis.\n\nConclusion : Antigone reste un symbole universel de résistance contre l'injustice, mais elle soulève aussi la question du prix de l'idéalisme.",
+        "points": [
+          "Introduction claire avec problématique",
+          "Thèse soutenue par des exemples",
+          "Antithèse équilibrée",
+          "Synthèse qui lie les deux points de vue",
+          "Conclusion qui ouvre sur une dimension plus large"
+        ]
+      }
+    ]
+  },
+  "progress": {
+    "title": "Suivi des Progrès",
+    "subtitle": "Suivez votre progression dans l'étude",
+    "sections_visited": "Sections visitées",
+    "time_spent": "Temps passé",
+    "minutes": "minutes",
+    "quizzes_taken": "Quiz effectués",
+    "average": "moyenne",
+    "best_score": "Meilleur score",
+    "recent_results": "Résultats récents",
+    "correct": "correct",
+    "sections_visited_title": "Sections que vous avez visitées",
+    "no_data": "Aucune donnée pour le moment. Commencez à étudier pour voir vos progrès !"
+  },
+  "notes": {
+    "title": "Mes Notes",
+    "subtitle": "Enregistrez vos notes personnelles",
+    "add_note": "Ajouter une note",
+    "section": "Section",
+    "content": "Contenu",
+    "content_placeholder": "Écrivez votre note ici...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "all_sections": "Toutes les sections",
+    "select_section": "Sélectionner une section",
+    "other": "Autre",
+    "no_notes": "Aucune note pour le moment. Ajoutez une nouvelle note !",
+    "confirm_delete": "Êtes-vous sûr de vouloir supprimer cette note ?"
+  },
+  "search": {
+    "title": "Recherche Globale",
+    "subtitle": "Recherchez dans tout le contenu de l'application",
+    "placeholder": "Rechercher un personnage, thème, citation...",
+    "results_count": "{{count}} résultat(s) trouvé(s)",
+    "no_results": "Aucun résultat trouvé",
+    "start_typing": "Commencez à taper pour rechercher...",
+    "character": "Personnage",
+    "theme": "Thème",
+    "quote": "Citation",
+    "section": "Section"
+  },
+  "quick_review": {
+    "title": "Révision Rapide",
+    "subtitle": "Révision rapide des informations essentielles",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "characters": {
+      "title": "Personnages Principaux"
+    },
+    "themes": {
+      "title": "Thèmes Essentiels"
+    },
+    "key_info": {
+      "title": "Informations Clés",
+      "author": "Auteur",
+      "date": "Date",
+      "genre": "Genre",
+      "context": "Contexte",
+      "context_value": "Paris sous l'Occupation allemande (1944)"
+    }
+  },
+  "bookmarks": {
+    "title": "Mes Signets",
+    "subtitle": "Sections que vous avez sauvegardées pour référence",
+    "add": "Ajouter un signet",
+    "remove": "Retirer le signet",
+    "visit": "Visiter",
+    "no_bookmarks": "Aucun signet pour le moment. Enregistrez les sections importantes pour y revenir plus tard !"
+  },
+  "about": {
+    "title": "À Propos de l'Application",
+    "subtitle": "Informations sur l'application et le développeur",
+    "intro": {
+      "title": "Vue d'ensemble",
+      "description": "Cette application éducative est conçue pour aider les élèves de première année du baccalauréat à étudier la pièce 'Antigone' de Jean Anouilh. Elle offre un contenu complet, des exercices interactifs et des outils pédagogiques avancés pour améliorer l'expérience d'apprentissage et la préparation à l'examen régional."
+    },
+    "features": {
+      "title": "Fonctionnalités Principales",
+      "content": {
+        "title": "Contenu Complet",
+        "description": "Analyse complète de la pièce : personnages, thèmes, citations, comparaison avec Sophocle, et glossaire littéraire."
+      },
+      "interactive": {
+        "title": "Outils Interactifs",
+        "description": "Quiz rapides, suivi des progrès, notes personnelles, signets, et recherche globale dans tout le contenu."
+      },
+      "exam": {
+        "title": "Préparation à l'Examen",
+        "description": "Questions similaires à l'examen régional, modèles de réponses complètes, guide 'Comment répondre', et mode examen complet."
+      },
+      "community": {
+        "title": "Partage",
+        "description": "Espace pour partager les écrits et créations des élèves sur la pièce."
+      }
+    },
+    "purpose": {
+      "title": "Objectif",
+      "description": "Cette application vise à faciliter l'étude de la pièce Antigone et à fournir toutes les ressources nécessaires aux élèves pour réussir l'examen régional. Elle est conçue pour être facile à utiliser, complète et entièrement gratuite."
+    },
+    "stats": {
+      "sections": "Sections éducatives",
+      "free": "Entièrement gratuit",
+      "languages": "Langues"
+    }
+  },
+  "flashcards": {
+    "title": "Cartes de Révision",
+    "subtitle": "Révisez l'essentiel en quelques secondes",
+    "flip_hint": "Cliquez sur la carte pour voir la réponse",
+    "cards": [
+      {
+        "q": "Qui est l'auteur ?",
+        "a": "Jean Anouilh"
+      },
+      {
+        "q": "L'année de création ?",
+        "a": "1942"
+      },
+      {
+        "q": "Le genre ?",
+        "a": "Tragédie moderne"
+      },
+      {
+        "q": "Conflit central ?",
+        "a": "Idéalisme vs Pragmatisme"
+      },
+      {
+        "q": "La fin d'Antigone ?",
+        "a": "La mort par pendaison"
+      }
+    ]
+  },
+  "figures_style": {
+    "title": "Figures de Style",
+    "subtitle": "Maîtrisez les outils de la rhétorique pour l'examen.",
+    "list": [
+      {
+        "name": "Comparaison",
+        "definition": "Rapprochement de deux idées ou objets à l'aide d'un mot de liaison (comme, tel que, semblable à...).",
+        "examples": [
+          {
+            "text": "Pareille à ces petits cochons...",
+            "context": "La Nourrice compare Antigone enfant à des porcelets."
+          },
+          {
+            "text": "C’est propre la tragédie [...] C’est comme dans un livre.",
+            "context": "Le Chœur compare la propreté de la tragédie à celle d'un livre."
+          }
+        ]
+      },
+      {
+        "name": "Métaphore",
+        "definition": "Comparaison sans mot de liaison, transportant le sens d'un contexte à un autre.",
+        "examples": [
+          {
+            "text": "Le sale espoir.",
+            "context": "Antigone qualifie l'espoir de 'sale' pour marquer son refus du compromis."
+          },
+          {
+            "text": "Le jardin dormait encore.",
+            "context": "Image pour décrire le calme absolu du petit matin."
+          }
+        ]
+      },
+      {
+        "name": "Personnification",
+        "definition": "Attribution de traits ou comportements humains à un objet inanimé ou un animal.",
+        "examples": [
+          {
+            "text": "Le jardin dormait encore.",
+            "context": "Le jardin est décrit comme un être humain qui dort."
+          },
+          {
+            "text": "La mort est là.",
+            "context": "La mort est présentée comme une présence physique."
+          }
+        ]
+      },
+      {
+        "name": "Hyperbole",
+        "definition": "Utilisation de termes excessifs pour accentuer une idée ou frapper les esprits.",
+        "examples": [
+          {
+            "text": "Mourir mille fois.",
+            "context": "Antigone exprime sa détermination absolue face à la mort."
+          },
+          {
+            "text": "Tout le monde comprend.",
+            "context": "Créon exagère l'unanimité de l'avis des gens."
+          }
+        ]
+      },
+      {
+        "name": "Antithèse",
+        "definition": "Opposition de deux termes ou idées contraires dans une même phrase.",
+        "examples": [
+          {
+            "text": "Petit bras / grand mal.",
+            "context": "Opposition entre la fragilité physique d'Antigone et la gravité de son acte."
+          },
+          {
+            "text": "Toi, la grande, Ismène ; moi, la petite.",
+            "context": "Opposition physique et morale entre les deux sœurs."
+          }
+        ]
+      },
+      {
+        "name": "Anaphore",
+        "definition": "Répétition d'un mot ou d'un groupe de mots en début de phrases ou de paragraphes successifs.",
+        "examples": [
+          {
+            "text": "Comprendre... Vous n’avez que ce mot-là dans la bouche.",
+            "context": "Répétition pour souligner l'exaspération d'Antigone."
+          },
+          {
+            "text": "C'est propre la tragédie... C'est reposant la tragédie...",
+            "context": "Répétition pour définir la nature de la tragédie par le Chœur."
+          }
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "title": " مسار الأحداث - Chronologie",
+    "subtitle": "Suivez le fil tragique des événements qui ont scellé le destin de Thèbes.",
+    "events": [
+      {
+        "time": "Le Début",
+        "title": "Le Prologue",
+        "description": "Le Chœur présente les personnages et annonce la fin inéluctable. Le décor est planté, la tragédie peut commencer."
+      },
+      {
+        "time": "4:00 du matin",
+        "title": "Le Retour d'Antigone",
+        "description": "Antigone rentre au palais à l'aube. La Nourrice la surprend et croit à un rendez-vous amoureux."
+      },
+      {
+        "time": "Petit matin",
+        "title": "Face à Ismène",
+        "description": "Antigone annonce à sa sœur son intention d'enterrer Polynice. Ismène refuse par peur et par raison."
+      },
+      {
+        "time": "Matinée",
+        "title": "L'Adieu à Hémon",
+        "description": "Antigone demande pardon à Hémon et rompt avec lui sans explication, se consacrant à son destin."
+      },
+      {
+        "time": "Midi",
+        "title": "La Première Tentative",
+        "description": "Un garde annonce à Créon que quelqu'un a tenté de recouvrir le corps de Polynice de terre."
+      },
+      {
+        "time": "Après-midi",
+        "title": "L'Arrestation",
+        "description": "Antigone est capturée par les gardes alors qu'elle tentait d'enterrer son frère une seconde fois."
+      },
+      {
+        "time": "Le Face-à-face",
+        "title": "Le Grand Débat",
+        "description": "Longue confrontation entre Créon et Antigone. Le pouvoir politique face à l'idéalisme absolu."
+      },
+      {
+        "time": "Le Soir",
+        "title": "La Sentence",
+        "description": "Créon ordonne qu'Antigone soit emmurée vivante dans un caveau rocheux."
+      },
+      {
+        "time": "Dans la prison",
+        "title": "La Dernière Lettre",
+        "description": "Antigone dicte à un garde une lettre pour Hémon, révélant ses doutes avant de mourir."
+      },
+      {
+        "time": "La Fin",
+        "title": "Le Dénouement",
+        "description": "Suicide d'Antigone, suivi de celui d'Hémon et d'Eurydice. Créon reste seul avec sa fatigue et son pouvoir."
+      }
+    ]
+  }
+}

@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { Ear, Music, Info } from 'lucide-react';
 
 const Audio: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
   const audioClips = t('audio.clips', { returnObjects: true }) as { title: string; description: string; speaker: string; src: string }[];
 
   // try to load localized scenes from i18n; fall back to built-in French summaries

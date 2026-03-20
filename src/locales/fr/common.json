@@ -1,0 +1,140 @@
+{
+  "app": {
+    "title": "Antigone",
+    "subtitle": "par Jean Anouilh - LAARAARI MUSTAPH",
+    "developer": "Développeur: LAARAARI MUSTAPH",
+    "hub_title": "Portail des Œuvres",
+    "by": "par"
+  },
+  "lang": {
+    "fr": "Français",
+    "ar": "العربية",
+    "change": "Changer la langue"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "made_with": "Fait avec ❤️ pour les élèves de 1Bac"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "characters": "Personnages",
+    "oeuvre": "L'Œuvre",
+    "themes": "Thèmes",
+    "quotes": "Citations",
+    "fiche": "Fiche",
+    "scenes": "Analyse par Scène",
+    "quiz_rapide": "Quiz Rapide",
+    "ecrits": "Écrits d'élèves",
+    "audio": "Version Audio",
+    "examen": "Banque de Questions",
+    "exam_simulator": "Simulateur d'Examen",
+    "comparison": "Comparaison",
+    "glossary": "Glossaire",
+    "mindmaps": "Cartes Mentales",
+    "howto": "Comment Répondre",
+    "sample_answers": "Réponses types",
+    "figures_style": "Figures de style",
+    "timeline": "Chronologie",
+    "flashcards": "Cartes de Révision",
+    "progress": "Mon Progrès",
+    "notes": "Mes Notes",
+    "search": "Recherche",
+    "quick_review": "Révision Rapide",
+    "bookmarks": "Mes Signets",
+    "about": "À Propos"
+  },
+  "developer": {
+    "title": "À Propos du Développeur",
+    "subtitle": "Vision & Expertise",
+    "description": "Cette application a été développée avec une vision éducative visant à intégrer les technologies modernes au contenu littéraire de haut niveau. Nous nous efforçons d'offrir la meilleure expérience d'apprentissage aux élèves de la 1ère année du Baccalauréat.",
+    "name_label": "Développeur Principal",
+    "name_ar": "لعرعري مصطفى",
+    "name_fr": "Mustapha Laaraari",
+    "role": "Développeur Full-Stack & Innovateur Éducatif",
+    "badge": "Développeur Vérifié",
+    "stats": {
+      "experience": "Vaste Expérience",
+      "projects": "Projets Éducatifs",
+      "location": "Royaume du Maroc"
+    }
+  },
+  "login": {
+    "title": "Connexion",
+    "subtitle": "Entrez vos identifiants pour accéder à l'application",
+    "welcome": "Bienvenue",
+    "institution_name": "Groupe Scolaire AL OUMRANE",
+    "developer": "Développeur: LAARAARI MUSTAPHA",
+    "username": "Nom d'utilisateur",
+    "username_placeholder": "Entrez votre nom d'utilisateur",
+    "password": "Mot de passe",
+    "password_placeholder": "Entrez votre mot de passe",
+    "submit": "Se connecter",
+    "logging_in": "Connexion en cours...",
+    "info": "Veuillez utiliser votre nom d'utilisateur et mot de passe personnels",
+    "error": {
+      "empty": "Veuillez entrer un nom d'utilisateur et un mot de passe",
+      "invalid": "Nom d'utilisateur ou mot de passe incorrect"
+    }
+  },
+  "logout": {
+    "title": "Déconnexion",
+    "confirm": "Êtes-vous sûr de vouloir vous déconnecter ?"
+  },
+  "countdown": {
+    "title": "Compte à Rebours de l'Examen",
+    "days": "Jours",
+    "hours": "Heures",
+    "minutes": "Minutes",
+    "seconds": "Secondes",
+    "remaining_text": "Temps restant avant l'Examen Régional",
+    "motivation": "Chaque minute compte pour l'excellence !"
+  },
+  "hub": {
+    "title": "Choisissez votre Œuvre",
+    "subtitle": "Préparez votre examen régional avec une analyse complète et interactive des œuvres au programme.",
+    "works": {
+      "antigone": {
+        "title": "Antigone",
+        "author": "Jean Anouilh",
+        "description": "Une tragédie moderne explorant le conflit entre l'idéalisme et le réalisme politique."
+      },
+      "boite": {
+        "title": "La Boîte à Merveilles",
+        "author": "Ahmed Sefrioui",
+        "description": "Un voyage nostalgique à travers les souvenirs d'enfance à Fès."
+      },
+      "condamne": {
+        "title": "Le Dernier Jour d'un Condamné",
+        "author": "Victor Hugo",
+        "description": "Un plaidoyer puissant contre la peine de mort et la souffrance psychologique."
+      }
+    }
+  },
+  "guide": {
+    "title": "Guide d'Utilisation",
+    "subtitle": "Apprenez à tirer le meilleur parti de l'application",
+    "sections": {
+      "selection": {
+        "title": "Choix de l'œuvre",
+        "description": "Sélectionnez l'un des trois livres sur la page d'accueil pour accéder au contenu complet."
+      },
+      "navigation": {
+        "title": "Navigation Interactive",
+        "description": "Utilisez le menu pour explorer les personnages, les thèmes, et les analyses détaillées."
+      },
+      "simulator": {
+        "title": "Simulateur d'Examen",
+        "description": "Pratiquez avec le simulateur pour vous habituer au temps de l'examen (15 min par session)."
+      },
+      "tools": {
+        "title": "Outils de Révision",
+        "description": "Consultez le glossaire, les cartes mentales et les figures de style pour une révision efficace."
+      },
+      "notes": {
+        "title": "Notes et Signets",
+        "description": "Prenez des notes personnelles et enregistrez vos citations préférées pour les retrouver facilement."
+      }
+    },
+    "button": "Consulter le Guide"
+  }
+}

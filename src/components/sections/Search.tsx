@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { Search as SearchIcon, FileText, Users, Lightbulb, Quote, BookOpen } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -13,7 +14,8 @@ interface SearchResult {
 }
 
 const Search: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
+  const { t } = useBook();
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);

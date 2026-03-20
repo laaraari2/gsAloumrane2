@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { PenSquare, Send, Loader2, CheckCircle, AlertTriangle } from 'lucide-react';
 import { supabase } from '../../lib/supabaseClient';
@@ -8,7 +9,7 @@ import type { Database } from '../../lib/supabaseClient';
 type Submission = Database['public']['Tables']['submissions']['Row'];
 
 const Ecrits: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
   
   const [submissions, setSubmissions] = useState<Submission[]>([]);
   const [name, setName] = useState('');

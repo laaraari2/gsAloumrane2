@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BookMarked, Drama, Feather } from 'lucide-react';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 
 const Oeuvre: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useBook();
 
   const sections = [
     { key: 'creation', icon: Drama },
@@ -14,39 +15,47 @@ const Oeuvre: React.FC = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="max-w-4xl mx-auto"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      className="max-w-5xl mx-auto"
     >
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+      <div className="text-center mb-16">
+        <motion.h2 
+          className="text-4xl md:text-6xl font-black mb-4 text-gradient text-shadow-glow"
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+        >
           {t('oeuvre.title')}
-        </h2>
-        <p className="text-slate-400">{t('oeuvre.subtitle')}</p>
+        </motion.h2>
+        <p className="text-slate-400 font-medium tracking-wide uppercase text-sm opacity-80">{t('oeuvre.subtitle')}</p>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-10">
         {sections.map((section, index) => {
           const Icon = section.icon;
-          const initialX = i18n.dir() === 'rtl' ? 50 : -50;
           return (
             <motion.div
               key={index}
-              initial={{ x: initialX, opacity: 0 }}
+              initial={{ x: index % 2 === 0 ? -30 : 30, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: index * 0.2 }}
-              className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20"
+              transition={{ delay: index * 0.15 }}
+              className="glass card-hover rounded-[2.5rem] p-10 relative overflow-hidden group"
             >
-              <div className="flex items-start gap-4">
-                <div className="bg-purple-500/20 p-3 rounded-lg mt-1">
-                  <Icon className="w-7 h-7 text-purple-400" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-3xl group-hover:bg-purple-500/10 transition-colors" />
+              
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-8 relative">
+                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 p-5 rounded-[1.5rem] border border-white/10 group-hover:rotate-6 transition-transform">
+                  <Icon className="w-10 h-10 text-purple-400" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-serif font-bold text-purple-300 mb-3">{t(`oeuvre.${section.key}.title`)}</h3>
-                  <p className="text-slate-300 text-sm leading-relaxed text-justify">{t(`oeuvre.${section.key}.content`)}</p>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl md:text-3xl font-black text-white mb-6 group-hover:text-purple-300 transition-colors">{t(`oeuvre.${section.key}.title`)}</h3>
+                  <p className="text-slate-300 text-lg leading-relaxed text-justify opacity-90 font-medium">{t(`oeuvre.${section.key}.content`)}</p>
                 </div>
               </div>
+
+              {/* Decorative line */}
+              <div className="absolute bottom-0 left-10 right-10 h-0.5 bg-gradient-to-r from-transparent via-purple-500/20 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700" />
             </motion.div>
           );
         })}

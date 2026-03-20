@@ -8,9 +8,9 @@ export default defineConfig(({ mode }) => {
   
   return {
     plugins: [react()],
-    base: '/antigoneGs/',
+    base: '/gsAloumrane2/',
     define: {
-      'import.meta.env.VITE_BASE_URL': JSON.stringify('/antigoneGs/'),
+      'import.meta.env.VITE_BASE_URL': JSON.stringify('/gsAloumrane2/'),
     },
     
     optimizeDeps: {

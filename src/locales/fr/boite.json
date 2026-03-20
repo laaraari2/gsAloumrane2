@@ -1,0 +1,655 @@
+{
+  "home": {
+    "title": "Résumé",
+    "p1_part1": "La Boîte à Merveilles d'Ahmed Sefrioui est un roman autobiographique. Publié en",
+    "p1_part2": "1954",
+    "p1_part3": "il est l'une des premières œuvres de la littérature marocaine d'expression française.",
+    "p2_part1": "L'histoire tourne autour de Sidi Mohammed, un petit garçon de six ans, qui vit dans la médina de",
+    "p2_part2": "Fès",
+    "p2_part3": ".",
+    "p3_part1": "À travers les yeux de cet enfant imaginatif, nous découvrons la",
+    "p3_part2": "vie quotidienne",
+    "p3_part3": "de la société marocaine traditionnelle, où",
+    "p3_part4": "les croyances populaires",
+    "p3_part5": "se mêlent à la réalité vécue."
+  },
+  "characters": {
+    "title": "Les Personnages",
+    "subtitle": "Les habitants de Dar Chouafa et l'entourage de Sidi Mohammed",
+    "lalla_zoubida": {
+      "name": "Lalla Zoubida",
+      "role": "La mère (22 ans)",
+      "description": "Une femme de vingt-deux ans, descendante du prophète (Sharifa), bavarde, qui croit aux superstitions et aux saints.",
+      "traits": ["Superstitieuse", "Affectueuse", "Bavarde", "Sharifa"]
+    },
+    "maalem_abdeslam": {
+      "name": "Maâlem Abdeslam",
+      "role": "Le père",
+      "description": "Un tisserand de couvertures d'origine montagnarde, calme et travailleur. Il incarne la dignité et la stabilité familiale.",
+      "traits": ["Digne", "Calme", "Montagnard", "Silencieux"]
+    },
+    "la_chouafa": {
+      "name": "Kenza (La Chouafa)",
+      "role": "La voyante",
+      "description": "Locataire du rez-de-chaussée, adepte de la confrérie des Gnaouas. Elle organise des séances de musique et de transes.",
+      "traits": ["Mystérieuse", "Gnaouie", "Influente"]
+    },
+    "rahma": {
+      "name": "Rahma",
+      "role": "La voisine du premier",
+      "description": "Femme de Driss El Aouad (fabricant de charrues). Elle a une relation fluctuante avec Lalla Zoubida.",
+      "traits": ["Généreuse", "Vive", "Mère de Zineb"]
+    },
+    "zineb": {
+      "name": "Zineb",
+      "role": "La fille de Rahma",
+      "description": "Compagne de jeu détestée par le narrateur. Sa perte au chapitre VI crée un moment de solidarité.",
+      "traits": ["Ordinaire", "Innocente", "Perdue/Retrouvée"]
+    },
+    "lalla_aicha": {
+      "name": "Lalla Aïcha",
+      "role": "L'amie de la mère",
+      "description": "Ancienne voisine habitant Zankat Hajjama. Femme de Moulay Larbi (babouchier), elle est le soutien de Zoubida.",
+      "traits": ["Dévouée", "Malheureuse", "Sharifa"]
+    },
+    "le_fqih": {
+      "name": "Le Fqih",
+      "role": "Maître d'école",
+      "description": "Maître autoritaire du Msid. Il utilise la baguette de cognassier pour faire respecter la discipline.",
+      "traits": ["Sévère", "Craint", "Barbe noire"]
+    }
+  },
+  "oeuvre": {
+    "title": "L'Œuvre",
+    "subtitle": "Étude approfondie de La Boîte à Merveilles",
+    "creation": {
+      "title": "Contexte de Création",
+      "content": "Écrit en 1952 et publié en 1954, le roman s'inscrit dans la littérature marocaine d'expression française. Ahmed Sefrioui y livre une vision nostalgique et nuancée de la société marocaine traditionnelle sous le Protectorat, vue à travers le prisme de l'enfance."
+    },
+    "style": {
+      "title": "Style et Narration",
+      "content": "Le roman se caractérise par un style autobiographique où l'auteur, le narrateur adulte et le narrateur enfant (Sidi Mohammed) se confondent. Le récit est parsemé de termes en arabe et en darija, reflétant l'authenticité marocaine."
+    },
+    "vision": {
+      "title": "Vision et Portée",
+      "content": "Le roman vise à offrir une image authentique et vivante de la société marocaine ancienne, de ses traditions, de ses croyances et de sa solidarité sociale. C'est un témoignage précieux sur la ville de Fès et sa médina."
+    },
+    "structure_technique": {
+      "title": "Analyse Narrative",
+      "content": "Le récit utilise une focalisation interne. On distingue deux 'Je' : le narrateur adulte (qui se souvient) et le narrateur enfant (qui vit l'action). Les temps dominants sont l'imparfait pour la description et le passé simple pour les actions du passé, contrastant avec le présent d'énonciation de l'adulte."
+    },
+    "espace_temps": {
+      "title": "Cadre Spatial et Temporel",
+      "content": "L'action est une cartographie de Fès : Dar Chouafa (Derb Noualla), le Msid, la Kissaria, et Zankat Hajjama. Le récit s'étale sur trois saisons (Hiver, Printemps, Été), de l'enfance solitaire aux sept ans du narrateur."
+    },
+    "symboles_boite": {
+      "title": "Symboles de la Boîte",
+      "content": "La Boîte à Merveilles (le rêve, l'évasion), la baguette de cognassier du Fqih (la répression), le bain maure (l'enfer, le malaise), les objets hétéroclites (les amis imaginaires)."
+    }
+  },
+  "themes": {
+    "title": "Les Thèmes Majeurs",
+    "subtitle": "Les sujets principaux du roman",
+    "solitude": {
+      "title": "La Solitude",
+      "description": "Le sentiment constant de solitude de l'enfant narrateur, en raison de l'absence d'amis qui le comprennent, le pousse à se réfugier dans sa boîte à merveilles pour créer son propre monde."
+    },
+    "superstitions": {
+      "title": "Superstitions et Croyances",
+      "description": "Le roman met l'accent sur les visites aux sanctuaires, les voyantes (Chouafa) et le recours aux amulettes, qui font partie intégrante de la culture fassie de l'époque."
+    },
+    "enfance": {
+      "title": "Enfance et Éducation",
+      "description": "Description de l'expérience au Msid (école coranique), de la sévérité du Fqih et de la mémorisation du Coran, qui constituait la base de l'éducation des enfants."
+    },
+    "solidarite": {
+      "title": "Solidarité et Voisinage",
+      "description": "Le roman illustre la relation entre les locataires de Dar Chouafa, qui partagent leurs joies et leurs peines malgré leurs différends."
+    },
+    "famille": {
+      "title": "La Famille Traditionnelle",
+      "description": "Représentation de la famille patriarcale simple, où le père est le soutien respecté et la mère est responsable de la gestion du foyer et des commérages avec les voisines."
+    },
+    "merveilleux": {
+      "title": "Le Monde de l'Invisible",
+      "description": "Pour conjurer sa solitude, Sidi Mohammed transforme des objets ordinaires en trésors fabuleux, habités par des puissances invisibles. C'est son refuge contre le monde des adultes."
+    },
+    "culture_societe": {
+      "title": "Culture et Tradition",
+      "description": "Une immersion dans la société fassie : le banquet des aveugles, le rituel du bain maure (lieu de malaise), les Gnaouas, et les habits traditionnels (Mansouria, Haïk)."
+    }
+  },
+  "quotes": {
+    "title": "Citations Majeures",
+    "subtitle": "Paroles rattachées à La Boîte à Merveilles",
+    "q1": {
+      "text": "Je voulais pleurer, mais les larmes ne me soulageaient pas.",
+      "speaker": "Sidi Mohammed",
+      "context": "L'expression de la tristesse profonde de l'enfant qui ne trouve pas de soulagement."
+    },
+    "q2": {
+      "text": "Les mondes que je m'inventais étaient plus réels que la réalité brute.",
+      "speaker": "Sidi Mohammed",
+      "context": "Le pouvoir de l'imagination qui surpasse la vie quotidienne."
+    },
+    "q3": {
+      "text": "Ma solitude était un compagnon lourd, mais je ne voulais pas m'en défaire.",
+      "speaker": "Sidi Mohammed",
+      "context": "Le rapport complexe du narrateur avec sa solitude omniprésente."
+    },
+    "q4": {
+      "text": "Ma petite boîte était mon refuge, j'y trouvais tous mes merveilleux trésors.",
+      "speaker": "Sidi Mohammed",
+      "context": "L'importance vitale et symbolique de la Boîte à Merveilles."
+    },
+    "q5": {
+      "text": "Mon père parlait peu, mais son silence était rempli de sagesse.",
+      "speaker": "Sidi Mohammed",
+      "context": "Réflexion sur la figure paternelle de Maâlem Abdeslam."
+    },
+    "q6": {
+      "text": "Les femmes de notre quartier pleuraient beaucoup, mais leurs rires étaient plus forts et sincères.",
+      "speaker": "Sidi Mohammed",
+      "context": "Observation de la vie sociale et de la résilience à Dar Chouafa."
+    }
+  },
+  "fiche": {
+    "title": "Fiche de Lecture",
+    "subtitle": "Les informations essentielles de l'œuvre",
+    "identity": {
+      "title": "Identité Littéraire",
+      "author": "Auteur",
+      "author_value": "Ahmed Sefrioui",
+      "full_title": "Titre Complet",
+      "full_title_value": "La Boîte à Merveilles",
+      "genre": "Genre",
+      "genre_value": "Roman autobiographique",
+      "date": "Date d'écriture",
+      "date_value": "1952",
+      "first_perf": "Date de publication",
+      "first_perf_value": "1954"
+    },
+    "characters_section": {
+      "title": "Personnages Principaux",
+      "sidi_mohammed": "Sidi Mohammed : Le narrateur enfant (6 ans)",
+      "maalem_abdeslam": "Maâlem Abdeslam : Le père",
+      "lalla_zoubida": "Lalla Zoubida : La mère",
+      "la_chouafa": "Chouafa : La voyante (Kenza)"
+    },
+    "schema": {
+      "title": "Schéma narratif",
+      "prologue": "Situation initiale : Félicité et bonheur du narrateur avec ses parents à Dar Chouafa (Chap. I à VIII).",
+      "element": "Élément perturbateur : La ruine du père qui perd son capital dans le souk des haïks.",
+      "peripeties": "Péripéties : Voyage du père à la campagne comme moissonneur ; tristesse de la mère ; visites aux mausolées (Sidi Ali Boughaleb) ; séjour au Msid interrompu.",
+      "denouement": "Résolution : Le retour du père à la maison (Chapitre XII).",
+      "final": "Situation finale : Retour de l'équilibre et de la joie ; réouverture de la boîte à merveilles."
+    },
+    "symboles": {
+      "title": "Objets et Symboles Clés",
+      "items": "La Boîte (évasion), la baguette de cognassier (peur/Msid), la lampe à pétrole (luxe/progrès), les bracelets (mauvais augure), le cabochon de verre (ami)."
+    },
+    "narration_details": {
+      "title": "Double Énonciation",
+      "items": "Narrateur enfant (vision naïve/merveilleuse) vs Narrateur adulte (vision nostalgique/analytique)."
+    },
+    "themes_section": {
+      "title": "Thèmes Majeurs",
+      "items": "Solitude, superstitions, famille marocaine, enfance, solidarité."
+    }
+  },
+  "quiz_rapide": {
+    "title": "Quiz Rapide",
+    "subtitle": "Testez rapidement vos connaissances sur l'œuvre",
+    "start_button": "Commencer le quiz",
+    "next_button": "Question suivante",
+    "restart_button": "Recommencer",
+    "score_text": "Votre score",
+    "final_message_good": "Excellent travail ! Vous maîtrisez bien l'œuvre.",
+    "final_message_medium": "Pas mal ! Continuez à réviser pour consolider vos connaissances.",
+    "final_message_bad": "Il y a encore du travail. N'hésitez pas à relire la fiche et les autres sections.",
+    "questions": [
+      {
+        "question": "Quel est le genre littéraire de 'La Boîte à Merveilles' ?",
+        "options": ["Conte", "Roman autobiographique", "Parabole", "Journal intime"],
+        "correctAnswer": "Roman autobiographique",
+        "explanation": "C'est un roman où l'auteur raconte sa propre enfance de manière romancée."
+      },
+      {
+        "question": "Quel est l'âge du narrateur au début du récit ?",
+        "options": ["4 ans", "6 ans", "10 ans", "12 ans"],
+        "correctAnswer": "6 ans",
+        "explanation": "Le narrateur Sidi Mohammed a six ans au moment des faits racontés."
+      },
+      {
+        "question": "Dans quelle ville se déroule l'action ?",
+        "options": ["Marrakech", "Tanger", "Fès", "Meknès"],
+        "correctAnswer": "Fès",
+        "explanation": "L'histoire se passe dans la médina de Fès, quartier Derb Nouala."
+      },
+      {
+        "question": "Quel objet symbolise le refuge et l'imaginaire du narrateur ?",
+        "options": ["Un livre", "Sa boîte à merveilles", "Un cerf-volant", "Une épée"],
+        "correctAnswer": "Sa boîte à merveilles",
+        "explanation": "La boîte contient des objets hétéroclites qui deviennent des trésors dans son imagination."
+      },
+      {
+        "question": "Quel est le métier du père du narrateur ?",
+        "options": ["Menuisier", "Tisserand", "Forgeron", "Commerçant"],
+        "correctAnswer": "Tisserand",
+        "explanation": "Maâlem Abdeslam est un maître tisserand renommé."
+      },
+      {
+        "question": "Où se situe la maison 'Dar Chouafa' ?",
+        "options": ["Impasse du paradis", "Derb Nouala", "Près de l'université", "Hors les murs"],
+        "correctAnswer": "Derb Nouala",
+        "explanation": "Dar Chouafa est située au quartier Derb Nouala à Fès."
+      },
+      {
+        "question": "Quel événement malheureux frappe la famille au chapitre 8 ?",
+        "options": ["Une maladie", "Un incendie", "La perte du capital au souk", "Le décès d'un voisin"],
+        "correctAnswer": "La perte du capital au souk",
+        "explanation": "Le père perd sa sacoche contenant tout son argent au souk des Haïks."
+      },
+      {
+        "question": "Pourquoi le père doit-il quitter la maison ?",
+        "options": ["Pour faire le pèlerinage", "Pour travailler comme moissonneur", "Pour fuir la police", "Pour se marier ailleurs"],
+        "correctAnswer": "Pour travailler comme moissonneur",
+        "explanation": "Il part travailler dans les environs de Fès pour reconstituer son capital."
+      },
+      {
+        "question": "Comment s'appelle l'école coranique où va le narrateur ?",
+        "options": ["L'école primaire", "Le lycée", "Le Msid", "La Zaouïa"],
+        "correctAnswer": "Le Msid",
+        "explanation": "Le Msid est l'école traditionnelle où l'on apprend le Coran."
+      },
+      {
+        "question": "Quel est le sentiment dominant qui habite le narrateur ?",
+        "options": ["La joie", "La colère", "La solitude", "L'ambition"],
+        "correctAnswer": "La solitude",
+        "explanation": "La solitude est un thème central, poussant l'enfant vers le rêve et sa boîte."
+      }
+    ]
+  },
+  "audio": {
+    "title": "Version Audio",
+    "subtitle": "Le monde sonore de Sidi Mohammed",
+    "placeholder_title": "Fichiers audio",
+    "placeholder_text": "Les extraits audio permettent une meilleure immersion dans l'ambiance de Fès.",
+    "speaker_label": "Extrait :",
+    "clips": [
+      {
+        "title": "L'ambiance du Msid",
+        "speaker": "Le narrateur",
+        "description": "L'enfant décrit le brouhaha de l'école coranique et la peur du Fqih.",
+        "src": "audio/boite_msid.mp3"
+      },
+      {
+        "title": "La Boîte à Merveilles",
+        "speaker": "Sidi Mohammed",
+        "description": "Le moment où l'enfant ouvre sa boîte pour s'évader du monde réel.",
+        "src": "audio/boite_merveilles.mp3"
+      },
+      {
+        "title": "Le retour du père",
+        "speaker": "La famille",
+        "description": "La joie de la famille retrouvant Maâlem Abdeslam après son absence.",
+        "src": "audio/boite_retour.mp3"
+      }
+    ]
+  },
+  "timeline": {
+    "title": "مسار الأحداث - Chronologie",
+    "subtitle": "Les moments clés de La Boîte à Merveilles",
+    "events": [
+      {
+        "time": "Chapitre 1 - Hiver",
+        "title": "Dar Chouafa et le Msid",
+        "description": "Présentation du lieu (Dar Chouafa), des personnages des voisins (Rahma, Kenza) et de la difficile expérience de l'enfant à l'école coranique."
+      },
+      {
+        "time": "Chapitre 2 - Hiver",
+        "title": "Visite au sanctuaire de Sidi Ali Boughaleb",
+        "description": "Lalla Zoubida se rend avec Lalla Aïcha au sanctuaire pour chercher la guérison. L'enfant finit par être attaqué par un chat."
+      },
+      {
+        "time": "Chapitre 4 - Printemps",
+        "title": "Les problèmes de Lalla Aïcha",
+        "description": "Découverte que Moulay Larbi, le mari de l'amie de la mère, a été escroqué par son associé."
+      },
+      {
+        "time": "Chapitre 6 - Printemps",
+        "title": "Préparatifs pour Achoura",
+        "description": "Animation au Msid, nettoyage par les enfants et achat de nouveaux vêtements pour célébrer la fête d'Achoura."
+      },
+      {
+        "time": "Chapitre 8 - Été",
+        "title": "La Tragédie : Perte du capital",
+        "description": "Le père perd son argent au souk, ce qui l'oblige à quitter sa famille pour aller travailler comme moissonneur aux environs de Fès."
+      },
+      {
+        "time": "Chapitre 12 - Été",
+        "title": "Retour du père et fin du roman",
+        "description": "La famille retrouve sa joie avec le retour du Maâlem Abdeslam, et l'enfant rouvre sa boîte à merveilles pour partager ses secrets après une longue absence."
+      }
+    ]
+  },
+  "examen": {
+    "title": "Mode Examen",
+    "subtitle": "Questions types sur La Boîte à Merveilles",
+    "comprehension_title": "I. Questions de compréhension",
+    "analysis_title": "II. Analyse de texte",
+    "writing_title": "III. Production écrite",
+    "writing_placeholder": "Rédigez votre réponse ici...",
+    "show_answer_points": "Voir les points de réponse",
+    "show_analysis_points": "Voir les points clés de l'analyse",
+    "show_writing_points": "Voir les pistes de correction",
+    "comprehension_questions": [
+      {
+        "question": "Quel est le rôle symbolique de la Boîte à Merveilles pour l'enfant ?",
+        "points": [
+          "Elle représente son refuge contre la solitude du monde extérieur.",
+          "C'est un univers magique où les objets ordinaires prennent une dimension fabuleuse.",
+          "Elle symbolise l'évasion par l'imaginaire propre à l'enfance.",
+          "C'est le seul espace où le narrateur exerce un contrôle total."
+        ]
+      },
+      {
+        "question": "En quoi ce roman est-il un témoignage sur la société marocaine traditionnelle ?",
+        "points": [
+          "Il décrit la vie quotidienne dans la médina de Fès (coutumes, Msid).",
+          "Il illustre l'importance de la religion, des saints et des superstitions.",
+          "Il montre la structure de la famille patriarcale et le rôle des femmes.",
+          "Il souligne la solidarité et les relations entre voisins à Dar Chouafa."
+        ]
+      }
+    ],
+    "analysis_questions": [
+      {
+        "quote": "Ma solitude ne datait pas d'hier. Je voyais, le soir, s'allumer des lanternes... je me sentais plus seul que jamais.",
+        "question": "Analysez le sentiment de solitude chez le narrateur à partir de cet extrait.",
+        "points": [
+          "La solitude est présentée comme un état ancien et permanent ('ne datait pas d'hier').",
+          "Le contraste entre l'animation extérieure (les lanternes) et le vide intérieur de l'enfant.",
+          "La solitude est le moteur de son imagination et de son recours à la Boîte à Merveilles."
+        ]
+      },
+      {
+        "quote": "Les mondes que je m'inventais étaient plus réels que la réalité brute.",
+        "question": "Expliquez le rapport entre l'imaginaire et la réalité dans la vision de l'enfant.",
+        "points": [
+          "L'imaginaire est un refuge protecteur contre une réalité parfois hostile ou décevante.",
+          "La subjectivité de l'enfant transforme la perception du monde.",
+          "La vérité émotionnelle de ses rêves a plus de poids que les faits concrets."
+        ]
+      }
+    ],
+    "writing_prompts": [
+      {
+        "prompt": "Sujet : La Boîte à Merveilles est souvent décrite comme un pont entre le réel et le merveilleux. En vous basant sur votre lecture, expliquez comment l'imagination permet à l'enfant de surmonter sa solitude.",
+        "points": [
+          "Introduction : Définir la Boîte comme objet transitionnel.",
+          "Thèse : L'imagination transforme les objets simples en trésors vivants.",
+          "Argument : Le rêve comme rempart contre l'incompréhension des adultes.",
+          "Conclusion : La solitude devient une force créatrice grâce à l'évasion."
+        ]
+      },
+      {
+        "prompt": "Sujet : Pensez-vous que la description du Msid et du Fqih dans le roman reflète une vision négative ou nostalgique de l'éducation traditionnelle ?",
+        "points": [
+          "Introduction : Présenter le Msid comme lieu central de l'enfance du narrateur.",
+          "Côté négatif : La sévérité du Fqih, la peur de la baguette de cognassier, l'apprentissage mécanique.",
+          "Côté nostalgique : L'importance de la tradition, l'ambiance sacrée, la fierté des parents lors d'Achoura.",
+          "Conclusion : Une vision nuancée qui mêle souffrance enfantine et respect des racines."
+        ]
+      }
+    ]
+  },
+  "exam_simulator": {
+    "title": "Simulateur d'Examen Régional",
+    "subtitle": "Testez-vous dans des conditions réelles. Vous avez 15 minutes.",
+    "questions": [
+      {
+        "id": 1,
+        "type": "comprehension",
+        "text": "Dans quelle ville et quel quartier se déroule l'action du roman ?",
+        "modelAnswer": [
+          "À Fès",
+          "Dans la médina de Fès",
+          "Au quartier Derb Nouala"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "analysis",
+        "quote": "Ma solitude ne datait pas d'hier.",
+        "text": "Quelle est la figure de style employée dans cette phrase pour souligner la permanence de la solitude ?",
+        "modelAnswer": [
+          "Une litote",
+          "La litote"
+        ]
+      },
+      {
+        "id": 3,
+        "type": "comprehension",
+        "text": "Quel événement oblige le père, Maâlem Abdeslam, à quitter sa famille ?",
+        "modelAnswer": [
+          "La perte de son capital au souk",
+          "La perte de sa sacoche d'argent",
+          "Il doit aller travailler comme moissonneur"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "analysis",
+        "quote": "Les mondes que je m'inventais étaient plus réels que la réalité brute.",
+        "text": "Expliquez le rôle de la Boîte à Merveilles pour le narrateur d'après cette citation.",
+        "modelAnswer": [
+          "Un refuge contre la solitude",
+          "Un moyen d'évasion par l'imaginaire",
+          "Un pont entre le réel et le merveilleux"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "comprehension",
+        "text": "Quel est le nom de la maison où habitent le narrateur et ses voisins ?",
+        "modelAnswer": [
+          "Dar Chouafa",
+          "La maison de la voyante"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "analysis",
+        "text": "Le roman est structuré autour de combien de saisons et de chapitres ?",
+        "modelAnswer": [
+          "3 saisons et 12 chapitres",
+          "12 chapitres et 3 saisons"
+        ]
+      }
+    ]
+  },
+  "quick_review": {
+    "title": "Révision Rapide",
+    "subtitle": "Révision rapide des informations essentielles",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "characters": {
+      "title": "Personnages Principaux"
+    },
+    "themes": {
+      "title": "Thèmes Essentiels"
+    },
+    "key_info": {
+      "title": "Informations Clés",
+      "author": "Auteur",
+      "date": "Date",
+      "genre": "Genre",
+      "context": "Contexte",
+      "context_value": "Le Maroc sous le Protectorat français (années 20)"
+    }
+  },
+  "flashcards": {
+    "title": "Cartes de Révision",
+    "subtitle": "Révisez l'essentiel en quelques secondes",
+    "flip_hint": "Cliquez sur la carte pour voir la réponse",
+    "cards": [
+      {
+        "q": "Qui est l'auteur ?",
+        "a": "Ahmed Sefrioui"
+      },
+      {
+        "q": "L'année de publication ?",
+        "a": "1954"
+      },
+      {
+        "q": "Le genre ?",
+        "a": "Roman autobiographique"
+      },
+      {
+        "q": "La ville de l'action ?",
+        "a": "Fès"
+      },
+      {
+        "q": "L'objet refuge ?",
+        "a": "La Boîte à Merveilles"
+      }
+    ]
+  },
+  "progress": {
+    "title": "Mon Progrès",
+    "subtitle": "Suivi de votre préparation"
+  },
+  "notes": {
+    "title": "Mes Notes",
+    "subtitle": "Espace personnel pour vos réflexions"
+  },
+  "bookmarks": {
+    "title": "Mes Signets",
+    "subtitle": "Vos passages favoris"
+  },
+  "about": {
+    "title": "À Propos",
+    "subtitle": "Détails sur cette analyse"
+  },
+  "ecrits": {
+    "title": "Écrits d'élèves",
+    "subtitle": "Exemples de productions écrites"
+  },
+  "glossary": {
+    "title": "Glossaire",
+    "subtitle": "Explication des termes difficiles et culturels",
+    "search_placeholder": "Rechercher un mot (ex: Msid, Haïk...)",
+    "example": "Exemple d'usage",
+    "no_results": "Aucun mot trouvé dans le dictionnaire.",
+    "terms": [
+      {
+        "term": "Chouafa",
+        "definition": "Voyante et guérisseuse. Kenza, qui habite le rez-de-chaussée de la maison du narrateur, est une Chouafa respectée.",
+        "example": "La Chouafa organisait chaque mois une séance de musique et de danse gnaoua."
+      },
+      {
+        "term": "Msid",
+        "definition": "École coranique traditionnelle où les enfants apprennent à lire et à écrire le Coran sous la direction d'un Fqih.",
+        "example": "Le narrateur passait ses journées au Msid, un lieu sombre et redouté."
+      },
+      {
+        "term": "Fqih",
+        "definition": "Maître d'école coranique. Dans le roman, il symbolise l'autorité rigide et le châtiment corporel avec sa baguette de cognassier.",
+        "example": "Le regard du Fqih suffisait à glacer de terreur les petits écoliers."
+      },
+      {
+        "term": "Kissaria",
+        "definition": "Le grand marché couvert de la médina de Fès, centre du commerce des tissus et des articles de luxe.",
+        "example": "Lalla Zoubida aimait se rendre à la Kissaria pour admirer les étoffes et les bijoux."
+      },
+      {
+        "term": "Haïk",
+        "definition": "Grand voile blanc en laine ou en coton dont les femmes se drapaient pour sortir, ne laissant voir que leurs yeux.",
+        "example": "Rahma et Lalla Zoubida ajustèrent leur haïk avant de se rendre au sanctuaire."
+      },
+      {
+        "term": "Bendir",
+        "definition": "Instrument de percussion traditionnel (cadre en bois et peau de chèvre) très utilisé dans les fêtes populaires.",
+        "example": "Le soir de la fête, on entendait le rythme assourdissant des bendirs depuis Dar Chouafa."
+      },
+      {
+        "term": "Mansouria",
+        "definition": "Tunique fine et transparente que l'on porte traditionnellement sous le caftan.",
+        "example": "Lalla Aïcha portait une somptueuse mansouria lors de la réception des voisines."
+      },
+      {
+        "term": "Dar Chouafa",
+        "definition": "Littéralement 'La Maison de la Voyante'. C'est le cadre spatial principal où cohabitent plusieurs familles.",
+        "example": "Toute l'enfance du narrateur est marquée par les souvenirs de Dar Chouafa."
+      },
+      {
+        "term": "Gnaouas",
+        "definition": "Membres d'une confrérie aux origines subsahariennes, réputés pour leur musique thérapeutique et leurs rituels.",
+        "example": "Les gnaouas venaient régulièrement chez la Chouafa pour des séances de transe."
+      }
+    ]
+  },
+  "mindmaps": {
+    "title": "Cartes Mentales",
+    "subtitle": "Résumés visuels de l'œuvre"
+  },
+  "howto": {
+    "title": "Comment Répondre",
+    "subtitle": "Méthodologie d'analyse des textes"
+  },
+  "sample_answers": {
+    "title": "Réponses types",
+    "subtitle": "Modèles de réponses aux examens"
+  },
+  "figures_style": {
+    "title": "Figures de Style",
+    "subtitle": "Analyse des procédés littéraires dans La Boîte à Merveilles",
+    "list": [
+      {
+        "name": "Comparaison",
+        "definition": "Rapprochement de deux éléments avec un outil de comparaison.",
+        "examples": [
+          {
+            "text": "Ma solitude était plus lourde qu'un sac de charbon.",
+            "context": "Le narrateur exprime sa peine d'enfant."
+          }
+        ]
+      },
+      {
+        "name": "Métaphore",
+        "definition": "Comparaison sans outil de liaison.",
+        "examples": [
+          {
+            "text": "La Boîte à Merveilles était mon paradis.",
+            "context": "Image pour dire que la boîte est son seul lieu de bonheur."
+          }
+        ]
+      },
+      {
+        "name": "Hyperbole",
+        "definition": "Exagération pour frapper l'imagination.",
+        "examples": [
+          {
+            "text": "Les cris des femmes faisaient trembler les murs de Dar Chouafa.",
+            "context": "Description de l'ambiance sonore lors d'un différend."
+          }
+        ]
+      },
+      {
+        "name": "Énumération / Gradation",
+        "definition": "Succession de termes pour créer un effet d'abondance.",
+        "examples": [
+          {
+            "text": "Des clous, des boutons, des bouts de ficelle, des fragments de verre...",
+            "context": "Description du contenu hétéroclite de la boîte."
+          }
+        ]
+      }
+    ]
+  },
+  "search": {
+    "title": "Recherche",
+    "subtitle": "Chercher dans le contenu"
+  }
+}

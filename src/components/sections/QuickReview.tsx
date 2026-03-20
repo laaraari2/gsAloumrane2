@@ -1,38 +1,44 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
-import { Zap, ChevronRight, ChevronLeft, BookOpen, Users, Lightbulb } from 'lucide-react';
+import { useBook } from '../../hooks/useBook';
+import { ChevronRight, ChevronLeft, BookOpen, Users, Lightbulb } from 'lucide-react';
+
+import Flashcards from '../Flashcards';
 
 const QuickReview: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const charactersData = t('characters', { returnObjects: true }) as Record<string, any>;
+  const themesData = t('themes', { returnObjects: true }) as Record<string, any>;
+
+  const charactersList = Object.entries(charactersData || {})
+    .filter(([k]) => k !== 'title' && k !== 'subtitle')
+    .slice(0, 4)
+    .map(([_, v]) => ({ label: v.name, value: v.role }));
+
+  const themesList = Object.entries(themesData || {})
+    .filter(([k]) => k !== 'title' && k !== 'subtitle')
+    .slice(0, 4)
+    .map(([_, v]) => ({ label: v.title, value: v.description }));
 
   const reviewCards = [
     {
       title: t('quick_review.characters.title'),
       icon: Users,
-      items: [
-        { label: t('characters.antigone.name'), value: t('characters.antigone.role') },
-        { label: t('characters.creon.name'), value: t('characters.creon.role') },
-        { label: t('characters.ismene.name'), value: t('characters.ismene.role') },
-        { label: t('characters.hemon.name'), value: t('characters.hemon.role') },
-      ],
+      items: charactersList,
     },
     {
       title: t('quick_review.themes.title'),
       icon: Lightbulb,
-      items: [
-        { label: t('themes.revolte.title'), value: t('themes.revolte.description') },
-        { label: t('themes.bonheur.title'), value: t('themes.bonheur.description') },
-        { label: t('themes.fatalite.title'), value: t('themes.fatalite.description') },
-      ],
+      items: themesList,
     },
     {
       title: t('quick_review.key_info.title'),
       icon: BookOpen,
       items: [
-        { label: t('quick_review.key_info.author'), value: 'Jean Anouilh' },
-        { label: t('quick_review.key_info.date'), value: '1942 (écrit), 1944 (joué)' },
+        { label: t('quick_review.key_info.author'), value: t('fiche.identity.author_value') },
+        { label: t('quick_review.key_info.date'), value: t('fiche.identity.date_value') },
         { label: t('quick_review.key_info.genre'), value: t('fiche.identity.genre_value') },
         { label: t('quick_review.key_info.context'), value: t('quick_review.key_info.context_value') },
       ],
@@ -52,50 +58,56 @@ const QuickReview: React.FC = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="max-w-4xl mx-auto"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      className="max-w-6xl mx-auto"
     >
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-6xl font-black mb-4 text-gradient text-shadow-glow">
           {t('quick_review.title')}
         </h2>
-        <p className="text-slate-400">{t('quick_review.subtitle')}</p>
+        <p className="text-slate-400 font-medium uppercase tracking-widest text-sm opacity-80">{t('quick_review.subtitle')}</p>
       </div>
 
-      <div className="relative">
+      <Flashcards />
+
+      <div className="relative mt-20">
+        <h3 className="text-2xl font-black text-white mb-8 text-center uppercase tracking-widest">
+            {t('quick_review.key_info.title')}
+        </h3>
+        
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-8 backdrop-blur-sm border border-purple-500/20 min-h-[400px]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            className="glass p-10 rounded-3rem border border-white/10 min-h-[450px]"
           >
-            <div className="flex items-center gap-4 mb-6">
-              <div className="bg-purple-500/20 p-3 rounded-lg">
-                <Icon className="w-6 h-6 text-purple-400" />
+            <div className="flex items-center gap-6 mb-10">
+              <div className="bg-purple-500/20 p-4 rounded-2xl border border-purple-500/20">
+                <Icon className="w-8 h-8 text-purple-400 shadow-glow" />
               </div>
-              <h3 className="text-2xl font-bold font-serif text-purple-300">{currentCard.title}</h3>
+              <h3 className="text-3xl font-black text-white uppercase tracking-tighter">{currentCard.title}</h3>
             </div>
 
-            <div className="space-y-4">
+            <div className="grid md:grid-cols-2 gap-6">
               {currentCard.items.map((item, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-slate-900/50 rounded-lg p-4 border border-purple-500/20"
+                  className="glass-dark rounded-2xl p-6 border border-white/5 group card-hover"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-purple-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-purple-400 font-bold text-sm">{index + 1}</span>
+                    <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-glow group-hover:scale-110 transition-transform">
+                      <span className="text-white font-black text-lg">{index + 1}</span>
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-bold text-purple-300 mb-2">{item.label}</h4>
-                      <p className="text-slate-300 text-sm leading-relaxed">{item.value}</p>
+                      <h4 className="text-xl font-black text-white mb-2 group-hover:text-purple-300 transition-colors">{item.label}</h4>
+                      <p className="text-slate-300 font-medium leading-relaxed opacity-90">{item.value}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -105,22 +117,22 @@ const QuickReview: React.FC = () => {
         </AnimatePresence>
 
         {/* Navigation */}
-        <div className="flex items-center justify-between mt-6">
+        <div className="flex items-center justify-between mt-10">
           <button
             onClick={prevCard}
-            className="flex items-center gap-2 px-6 py-3 bg-slate-800/50 text-slate-300 rounded-lg hover:bg-slate-700/50 transition"
+            className="flex items-center gap-3 px-8 py-3 glass-dark rounded-2xl text-slate-300 font-black tracking-widest uppercase text-xs hover:text-white transition-all border border-white/5"
           >
             <ChevronLeft className="w-5 h-5" />
             {t('quick_review.previous')}
           </button>
 
-          <div className="flex gap-2">
+          <div className="flex gap-3">
             {reviewCards.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition ${
-                  index === currentIndex ? 'bg-purple-400' : 'bg-slate-600'
+                className={`h-2 rounded-full transition-all duration-500 ${
+                  index === currentIndex ? 'w-12 bg-gradient-to-r from-purple-400 to-pink-400' : 'w-2 bg-slate-700'
                 }`}
               />
             ))}
@@ -128,7 +140,7 @@ const QuickReview: React.FC = () => {
 
           <button
             onClick={nextCard}
-            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:opacity-90 transition"
+            className="flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl font-black tracking-widest uppercase text-xs hover:shadow-glow transition-all"
           >
             {t('quick_review.next')}
             <ChevronRight className="w-5 h-5" />
@@ -140,4 +152,3 @@ const QuickReview: React.FC = () => {
 };
 
 export default QuickReview;
-

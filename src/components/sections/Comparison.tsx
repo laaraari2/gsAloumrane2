@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { Scale, Users, BookOpen, Lightbulb, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Comparison: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
 
   const sections = ['characters', 'style', 'vision', 'structure', 'themes'];

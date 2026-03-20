@@ -4,7 +4,7 @@
 
 ### 1. تفعيل GitHub Pages في إعدادات الـ Repository:
 
-1. اذهب إلى repository على GitHub: https://github.com/laaraari2/antigone
+1. اذهب إلى repository على GitHub: https://github.com/laaraari2/gsAloumrane2
 2. اضغط على **Settings** (الإعدادات)
 3. في القائمة الجانبية، اضغط على **Pages**
 4. في قسم **Source**:
@@ -20,11 +20,11 @@
 ### 3. الوصول إلى التطبيق:
 
 بعد اكتمال البناء، سيكون التطبيق متاحاً على:
-**https://laaraari2.github.io/antigone/**
+**https://laaraari2.github.io/gsAloumrane2/**
 
 ## ملاحظات مهمة:
 
-1. **Base Path**: تم إعداد `base: '/antigone/'` في `vite.config.ts` لأن اسم الـ repository هو `antigone`
+1. **Base Path**: تم إعداد `base: '/gsAloumrane2/'` في `vite.config.ts` لأن اسم الـ repository هو `gsAloumrane2`
 2. **التحديثات التلقائية**: كل مرة ترفع فيها تغييرات إلى فرع `main`، سيتم بناء ونشر التطبيق تلقائياً
 3. **الانتظار**: بعد أول نشر، قد تحتاج إلى الانتظار بضع دقائق حتى يصبح الموقع متاحاً
 

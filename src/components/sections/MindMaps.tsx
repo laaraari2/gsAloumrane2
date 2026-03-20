@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useBook } from '../../hooks/useBook';
 import { useTranslation } from 'react-i18next';
 import { Network, Users, Lightbulb, GitBranch } from 'lucide-react';
 
 const MindMaps: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useBook();
   const maps = t('mindmaps.maps', { returnObjects: true }) as Array<{
     title: string;
     description: string;
@@ -19,53 +20,77 @@ const MindMaps: React.FC = () => {
     default: Network,
   };
 
+  const gradients = [
+    'from-purple-500/20 to-blue-500/20',
+    'from-pink-500/20 to-purple-500/20',
+    'from-emerald-500/20 to-teal-500/20',
+    'from-orange-500/20 to-pink-500/20',
+  ];
+
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="max-w-6xl mx-auto"
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      className="max-w-7xl mx-auto px-4"
     >
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+      <div className="text-center mb-20">
+        <h2 className="text-4xl md:text-6xl font-black mb-6 text-gradient text-shadow-glow">
           {t('mindmaps.title')}
         </h2>
-        <p className="text-slate-400">{t('mindmaps.subtitle')}</p>
+        <div className="w-24 h-1.5 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full mb-6" />
+        <p className="text-xl text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">
+          {t('mindmaps.subtitle')}
+        </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {Array.isArray(maps) &&
           maps.map((map, index) => {
             const Icon = iconMap[map.icon] || iconMap.default;
+            const gradient = gradients[index % gradients.length];
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-slate-800/50 to-purple-900/30 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="glass rounded-[2rem] overflow-hidden border border-white/10 flex flex-col h-full group"
               >
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-purple-500/20 p-3 rounded-lg">
-                    <Icon className="w-6 h-6 text-purple-400" />
+                <div className={`h-3 bg-gradient-to-r ${gradient.replace('/20', '')} opacity-50 group-hover:opacity-100 transition-opacity`} />
+                <div className="p-8 flex flex-col h-full">
+                  <div className="flex items-center gap-5 mb-8">
+                    <div className={`p-4 rounded-2xl bg-gradient-to-br ${gradient} border border-white/5 shadow-inner`}>
+                      <Icon className="w-8 h-8 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-black text-white tracking-tight">{map.title}</h3>
+                      <p className="text-xs font-bold text-slate-500 uppercase tracking-widest leading-none mt-1">
+                        Visualize Concept
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold font-serif text-purple-300 mb-2">{map.title}</h3>
-                    <p className="text-slate-300 text-sm">{map.description}</p>
-                  </div>
-                </div>
 
-                <div className="mt-4 space-y-2">
-                  {Array.isArray(map.items) &&
-                    map.items.map((item, itemIndex) => (
-                      <div
-                        key={itemIndex}
-                        className="flex items-center gap-2 text-slate-300 text-sm"
-                      >
-                        <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                        <span>{item}</span>
-                      </div>
-                    ))}
+                  <p className="text-slate-400 text-sm font-medium mb-8 flex-grow">
+                    {map.description}
+                  </p>
+
+                  <div className="space-y-3">
+                    {Array.isArray(map.items) &&
+                      map.items.map((item, itemIndex) => (
+                        <motion.div
+                          key={itemIndex}
+                          initial={{ x: -10, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          transition={{ delay: 0.3 + itemIndex * 0.05 }}
+                          className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors"
+                        >
+                          <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${gradient.replace('/20', '')} shadow-glow`} />
+                          <span className="text-sm font-medium text-slate-300">{item}</span>
+                        </motion.div>
+                      ))}
+                  </div>
                 </div>
               </motion.div>
             );

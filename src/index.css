@@ -3,33 +3,102 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --primary: #9d50bb;
+    --secondary: #6e48aa;
+    --accent: #ff0080;
+    --bg-dark: #0f172a;
+    --glass-bg: rgba(30, 41, 59, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+  }
+
   body {
-    @apply bg-slate-900;
-    @apply text-slate-200;
-    @apply min-h-screen font-sans;
+    @apply bg-slate-950 text-slate-200 min-h-screen font-sans antialiased selection:bg-purple-500/30;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(157, 80, 187, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(110, 72, 170, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(255, 0, 128, 0.05) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(157, 80, 187, 0.05) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
   }
 }
 
 @layer utilities {
-  .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  .glass {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-white/10;
   }
-  .scrollbar-hide::-webkit-scrollbar {
+  
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-xl border border-white/5;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-flow 8s ease infinite;
+  }
+
+  @keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  .scrollbar-hide {
+  .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
 
-  /* Mobile-friendly touch targets and spacing helpers */
-  .touch-large > * {
-    padding: 12px !important;
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/10 hover:border-purple-500/30;
   }
 
-  /* Ensure mobile menu covers content lightly */
-  .mobile-menu-backdrop {
-    background: rgba(2,6,23,0.6);
-    backdrop-filter: blur(6px);
+  .perspective-1000 {
+    perspective: 1000px;
   }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.3);
+  }
+
+  .rounded-3rem {
+    border-radius: 3rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #9d50bb, #6e48aa);
+  border-radius: 10px;
+  border: 2px solid rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #ff0080, #9d50bb);
 }
