@@ -11,6 +11,8 @@ export default defineConfig(({ mode }) => {
     base: '/gsAloumrane2/',
     define: {
       'import.meta.env.VITE_BASE_URL': JSON.stringify('/gsAloumrane2/'),
+      'import.meta.env.VITE_SUPABASE_URL': JSON.stringify(env.VITE_SUPABASE_URL),
+      'import.meta.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(env.VITE_SUPABASE_ANON_KEY),
     },
     
     optimizeDeps: {
